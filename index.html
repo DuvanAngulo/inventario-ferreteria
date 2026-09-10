@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventario Ferretería</title>
-    <!-- Librerías jsPDF para exportación en PDF -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
     <style>
@@ -83,15 +82,10 @@
         }
 
         .btn-save { background-color: var(--primary-color); color: white; flex: 2; min-width: 150px; }
-        .btn-save:hover { background-color: #004085; }
-
-        .btn-pdf { background-color: var(--accent-color); color: white; flex: 1; min-width: 130px; }
-        .btn-pdf:hover { background-color: #218838; }
-
+        .btn-pdf { background-color: var(--accent-color); color: white; flex: 1; min-width: 120px; }
+        .btn-backup { background-color: #17a2b8; color: white; flex: 1; min-width: 120px; }
         .btn-clear { background-color: #6c757d; color: white; flex: 1; min-width: 100px; }
-        .btn-clear:hover { background-color: #5a6268; }
 
-        /* Sección de Consulta y Buscador */
         .search-container {
             background-color: var(--secondary-color);
             padding: 15px;
@@ -151,14 +145,6 @@
 
         .btn-edit { background-color: #ffc107; color: #212529; }
         .btn-delete { background-color: #dc3545; color: white; }
-
-        @media (max-width: 600px) {
-            body { padding: 8px; }
-            .container { padding: 12px; }
-            h1 { font-size: 1.3rem; }
-            button { width: 100%; }
-            .search-container { flex-direction: column; align-items: stretch; }
-        }
     </style>
 </head>
 <body>
@@ -166,7 +152,7 @@
 <div class="container">
     <h1>📦 Inventario General de Ferretería</h1>
 
-    <!-- Formulario de Registro / Edición -->
+    <!-- Formulario -->
     <form id="inventoryForm">
         <input type="hidden" id="editIndex" value="-1">
         <div class="form-grid">
@@ -176,11 +162,11 @@
             </div>
             <div class="form-group">
                 <label for="m2Caja">M² por Caja (Opcional):</label>
-                <input type="number" step="0.01" id="m2Caja" placeholder="ej. 1.44 (Solo cerámicas)">
+                <input type="number" step="0.01" id="m2Caja" placeholder="ej. 1.44">
             </div>
             <div class="form-group">
                 <label for="medidas">Medidas (Opcional):</label>
-                <input type="text" id="medidas" placeholder="ej. 60x60 cm / 1/2 pulgada">
+                <input type="text" id="medidas" placeholder="ej. 60x60 cm">
             </div>
             <div class="form-group">
                 <label for="precio">Precio ($) *:</label>
@@ -190,19 +176,22 @@
 
         <div class="btn-group">
             <button type="submit" class="btn-save" id="btnSubmit">💾 Guardar Producto</button>
-            <button type="button" class="btn-pdf" onclick="generarPDF()">📄 Exportar PDF</button>
+            <button type="button" class="btn-pdf" onclick="generarPDF()">📄 PDF</button>
+            <button type="button" class="btn-backup" onclick="exportarBackup()">📥 Descargar Respaldo</button>
+            <button type="button" class="btn-backup" onclick="document.getElementById('fileImport').click()">📤 Cargar Respaldo</button>
+            <input type="file" id="fileImport" accept=".json" style="display: none;" onchange="importarBackup(event)">
             <button type="button" class="btn-clear" onclick="limpiarFormulario()">🔄 Limpiar</button>
         </div>
     </form>
 
-    <!-- Sección de Consulta por Nombre -->
+    <!-- Búsqueda -->
     <div class="search-container">
         <div class="search-box">
-            <input type="text" id="txtBuscar" placeholder="🔍 Consultar por nombre de producto (ej. Sanitario, Grifería, Cerámica)..." oninput="filtrarYRenderizar()">
+            <input type="text" id="txtBuscar" placeholder="🔍 Consultar por nombre de producto..." oninput="filtrarYRenderizar()">
         </div>
     </div>
 
-    <!-- Tabla de Productos -->
+    <!-- Tabla -->
     <div class="table-responsive">
         <table>
             <thead>
@@ -214,26 +203,20 @@
                     <th>Acciones</th>
                 </tr>
             </thead>
-            <tbody id="inventoryTable">
-                <!-- Se llena dinámicamente -->
-            </tbody>
+            <tbody id="inventoryTable"></tbody>
         </table>
     </div>
 </div>
 
 <script>
-    // Memoria local en el navegador
     let inventario = JSON.parse(localStorage.getItem('inventario_ferreteria')) || [];
-
     const form = document.getElementById('inventoryForm');
     const tableBody = document.getElementById('inventoryTable');
 
     document.addEventListener('DOMContentLoaded', filtrarYRenderizar);
 
-    // Guardar o Actualizar
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        
         const index = document.getElementById('editIndex').value;
         const m2Val = document.getElementById('m2Caja').value;
         const medidasVal = document.getElementById('medidas').value.trim();
@@ -256,23 +239,17 @@
         limpiarFormulario();
     });
 
-    // Filtro dinámico por nombre
     function filtrarYRenderizar() {
         const busqueda = document.getElementById('txtBuscar').value.toLowerCase();
-
         let resultado = inventario.filter(prod => prod.nombre.toLowerCase().includes(busqueda));
-        
-        // Ordenar alfabéticamente
         resultado.sort((a, b) => a.nombre.localeCompare(b.nombre));
-
         renderTable(resultado);
     }
 
-    // Dibujar en la tabla
     function renderTable(lista) {
         tableBody.innerHTML = '';
         if (lista.length === 0) {
-            tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; color: #777;">No se encontraron productos registrados.</td></tr>`;
+            tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; color: #777;">No hay productos guardados.</td></tr>`;
             return;
         }
 
@@ -293,7 +270,6 @@
         });
     }
 
-    // Editar registro
     function editarProducto(i) {
         const prod = inventario[i];
         document.getElementById('editIndex').value = i;
@@ -305,7 +281,6 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Eliminar registro
     function eliminarProducto(i) {
         if (confirm(`¿Deseas eliminar "${inventario[i].nombre}"?`)) {
             inventario.splice(i, 1);
@@ -314,36 +289,57 @@
         }
     }
 
-    // Limpiar campos
     function limpiarFormulario() {
         form.reset();
         document.getElementById('editIndex').value = "-1";
         document.getElementById('btnSubmit').textContent = "💾 Guardar Producto";
     }
 
-    // Guardado persistente
     function guardarEnStorage() {
         localStorage.setItem('inventario_ferreteria', JSON.stringify(inventario));
     }
 
-    // Exportar PDF
-    function generarPDF() {
+    // Funciones de Respaldo (Backup)
+    function exportarBackup() {
         if (inventario.length === 0) {
-            alert("No hay productos en el inventario para exportar.");
+            alert("No hay productos para exportar.");
             return;
         }
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(inventario, null, 2));
+        const downloadAnchor = document.createElement('a');
+        downloadAnchor.setAttribute("href", dataStr);
+        downloadAnchor.setAttribute("download", `Respaldo_Inventario_${new Date().toISOString().slice(0, 10)}.json`);
+        document.body.appendChild(downloadAnchor);
+        downloadAnchor.click();
+        downloadAnchor.remove();
+    }
 
+    function importarBackup(event) {
+        const fileReader = new FileReader();
+        fileReader.onload = function(e) {
+            try {
+                const datosCargados = JSON.parse(e.target.result);
+                if (Array.isArray(datosCargados)) {
+                    inventario = datosCargados;
+                    guardarEnStorage();
+                    filtrarYRenderizar();
+                    alert("¡Inventario cargado exitosamente!");
+                } else {
+                    alert("El archivo no tiene el formato correcto.");
+                }
+            } catch (err) {
+                alert("Error al leer el archivo de respaldo.");
+            }
+        };
+        fileReader.readAsText(event.target.files[0]);
+    }
+
+    function generarPDF() {
+        if (inventario.length === 0) return alert("No hay datos para exportar.");
         const { jsPDF } = window.jspdf;
         const doc = new jsPDF();
-
         doc.setFontSize(16);
-        doc.setTextColor(0, 86, 179);
-        doc.text("Catálogo / Reporte de Productos - Ferretería", 14, 18);
-
-        doc.setFontSize(10);
-        doc.setTextColor(100);
-        doc.text(`Fecha: ${new Date().toLocaleDateString()} - ${new Date().toLocaleTimeString()}`, 14, 25);
-
+        doc.text("Catálogo / Reporte de Productos", 14, 18);
         const headers = [["Producto", "M² / Caja", "Medidas", "Precio ($)"]];
         const data = inventario.map(p => [
             p.nombre,
@@ -351,17 +347,8 @@
             p.medidas !== null ? p.medidas : 'N/A',
             `$${p.precio.toLocaleString()}`
         ]);
-
-        doc.autoTable({
-            startY: 30,
-            head: headers,
-            body: data,
-            theme: 'grid',
-            headStyles: { fillColor: [0, 86, 179], textColor: [255, 255, 255] },
-            styles: { fontSize: 9, cellPadding: 3 }
-        });
-
-        doc.save(`Catálogo_Ferreteria_${new Date().toISOString().slice(0, 10)}.pdf`);
+        doc.autoTable({ startY: 25, head: headers, body: data, theme: 'grid' });
+        doc.save(`Inventario_${new Date().toISOString().slice(0, 10)}.pdf`);
     }
 </script>
 
