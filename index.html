@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventario Ferretería</title>
+    <title>Inventario General (Tiempo Real)</title>
+    <!-- Librerías de Firebase, PDF y Excel -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    
     <style>
         :root {
             --primary-color: #0056b3;
             --secondary-color: #f8f9fa;
             --accent-color: #28a745;
+            --excel-color: #1d6f42;
             --dark-color: #333;
             --border-color: #cccccc;
         }
@@ -24,7 +30,7 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1050px;
             margin: 0 auto;
             background: #ffffff;
             padding: 20px;
@@ -41,21 +47,21 @@
 
         .status-bar {
             background-color: #e9ecef;
-            padding: 8px 12px;
-            border-radius: 5px;
-            font-size: 0.85rem;
-            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-size: 0.9rem;
         }
 
-        .status-online { color: #28a745; font-weight: bold; }
-        .status-syncing { color: #ffc107; font-weight: bold; }
+        .status-ok { color: var(--accent-color); font-weight: bold; }
+        .status-error { color: #dc3545; font-weight: bold; }
 
         .form-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 12px;
             margin-bottom: 20px;
         }
@@ -97,6 +103,7 @@
 
         .btn-save { background-color: var(--primary-color); color: white; flex: 2; min-width: 150px; }
         .btn-pdf { background-color: var(--accent-color); color: white; flex: 1; min-width: 120px; }
+        .btn-excel { background-color: var(--excel-color); color: white; flex: 1; min-width: 120px; }
         .btn-clear { background-color: #6c757d; color: white; flex: 1; min-width: 100px; }
 
         .search-container {
@@ -105,15 +112,18 @@
             border-radius: 8px;
             border: 1px solid var(--border-color);
             margin-bottom: 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
         }
 
-        .search-box input {
+        .search-container input, .search-container select {
             width: 100%;
             padding: 9px;
             border: 1px solid var(--border-color);
             border-radius: 5px;
             box-sizing: border-box;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         .table-responsive {
@@ -141,6 +151,15 @@
 
         tr:nth-child(even) { background-color: #f8f9fa; }
 
+        .badge-cat {
+            background-color: #e2e8f0;
+            color: #334155;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
         .btn-action {
             padding: 5px 8px;
             font-size: 0.8rem;
@@ -154,20 +173,23 @@
 <body>
 
 <div class="container">
-    <h1>📦 Inventario General (Sincronizado)</h1>
+    <h1>📦 Inventario General (Tiempo Real)</h1>
 
     <div class="status-bar">
-        <span>Estado de la Nube: <span id="statusText" class="status-online">Conectado</span></span>
-        <button onclick="cargarDesdeNube()" style="padding: 4px 8px; font-size: 0.75rem;">🔄 Recargar Nube</button>
+        <span>Estado de la Base de Datos: <span id="statusText" class="status-ok">Conectando...</span></span>
     </div>
 
     <!-- Formulario -->
     <form id="inventoryForm">
-        <input type="hidden" id="editIndex" value="-1">
+        <input type="hidden" id="editKey" value="">
         <div class="form-grid">
             <div class="form-group">
                 <label for="nombre">Nombre / Descripción *:</label>
                 <input type="text" id="nombre" placeholder="ej. Sanitario Corona / Grifería" required>
+            </div>
+            <div class="form-group">
+                <label for="categoria">Categoría *:</label>
+                <input type="text" id="categoria" placeholder="ej. Baños, Cerámica, Herramientas" required>
             </div>
             <div class="form-group">
                 <label for="m2Caja">M² por Caja (Opcional):</label>
@@ -185,16 +207,20 @@
 
         <div class="btn-group">
             <button type="submit" class="btn-save" id="btnSubmit">💾 Guardar Producto</button>
-            <button type="button" class="btn-pdf" onclick="generarPDF()">📄 Generar PDF</button>
+            <button type="button" class="btn-pdf" onclick="generarPDF()">📄 Exportar PDF</button>
+            <button type="button" class="btn-excel" onclick="exportarExcel()">📊 Exportar Excel</button>
             <button type="button" class="btn-clear" onclick="limpiarFormulario()">🔄 Limpiar</button>
         </div>
     </form>
 
-    <!-- Búsqueda -->
+    <!-- Búsqueda y Filtros -->
     <div class="search-container">
-        <div class="search-box">
-            <input type="text" id="txtBuscar" placeholder="🔍 Consultar por nombre de producto..." oninput="filtrarYRenderizar()">
-        </div>
+        <input type="text" id="txtBuscar" placeholder="🔍 Buscar Nombre..." oninput="filtrarYRenderizar()">
+        <select id="selCategoria" onchange="filtrarYRenderizar()">
+            <option value="TODAS">Todas las Categorías</option>
+        </select>
+        <input type="number" id="precioMin" placeholder="💵 Precio Mín ($)" oninput="filtrarYRenderizar()">
+        <input type="number" id="precioMax" placeholder="💵 Precio Máx ($)" oninput="filtrarYRenderizar()">
     </div>
 
     <!-- Tabla -->
@@ -203,6 +229,7 @@
             <thead>
                 <tr>
                     <th>Producto</th>
+                    <th>Categoría</th>
                     <th>M² / Caja</th>
                     <th>Medidas</th>
                     <th>Precio</th>
@@ -215,104 +242,87 @@
 </div>
 
 <script>
-    // REEMPLAZA ESTA URL CON TU URL DE GOOGLE APPS SCRIPT
-    const API_URL = "https://script.google.com/macros/s/AKfycbxAvmPzKK4Nm2nCaSoLkquTRaPbppbdrXwOh2v61aVWKcqG4IKtjhmmbx17Qtydycavxw/exec";
+    // Configuración con tus credenciales reales de Firebase
+    const firebaseConfig = {
+        apiKey: "AIzaSyAsCunhFTYQALbjtCldAClPnYsrd4ybj0k",
+        authDomain: "inventarioferreteria-54d91.firebaseapp.com",
+        databaseURL: "https://inventarioferreteria-54d91-default-rtdb.firebaseio.com",
+        projectId: "inventarioferreteria-54d91",
+        storageBucket: "inventarioferreteria-54d91.firebasestorage.app",
+        messagingSenderId: "125843981156",
+        appId: "1:125843981156:web:4b003b8fB375c280743071",
+        measurementId: "G-940CKTH0JP"
+    };
+
+    // Inicializar Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database().ref('inventario');
 
     let inventario = [];
     const form = document.getElementById('inventoryForm');
     const tableBody = document.getElementById('inventoryTable');
+    const selCategoria = document.getElementById('selCategoria');
     const statusText = document.getElementById('statusText');
 
-    document.addEventListener('DOMContentLoaded', cargarDesdeNube);
-
-    async function cargarDesdeNube() {
-        setEstado("Cargando...", "status-syncing");
-        try {
-            const res = await fetch(API_URL);
-            inventario = await res.json();
-            filtrarYRenderizar();
-            setEstado("Conectado", "status-online");
-        } catch (err) {
-            console.error(err);
-            setEstado("Error al conectar", "status-syncing");
-        }
-    }
-
-    async function guardarEnNube() {
-        setEstado("Guardando en la nube...", "status-syncing");
-        try {
-            await fetch(API_URL, {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(inventario)
+    // Escuchar cambios en Tiempo Real
+    db.on('value', (snapshot) => {
+        const data = snapshot.val();
+        inventario = [];
+        
+        if (data) {
+            Object.keys(data).forEach(key => {
+                inventario.push({ key, ...data[key] });
             });
-            setEstado("Conectado", "status-online");
-        } catch (err) {
-            console.error(err);
-            setEstado("Error al guardar", "status-syncing");
         }
-    }
 
-    form.addEventListener('submit', async (e) => {
+        statusText.textContent = "⚡ Conectado y Sincronizado";
+        statusText.className = "status-ok";
+
+        actualizarDesplegableCategorias();
+        filtrarYRenderizar();
+    }, (error) => {
+        console.error(error);
+        statusText.textContent = "❌ Error de Permisos (Verifica Realtime Database)";
+        statusText.className = "status-error";
+    });
+
+    // Guardar o Editar
+    form.addEventListener('submit', (e) => {
         e.preventDefault();
-        const index = document.getElementById('editIndex').value;
+        const key = document.getElementById('editKey').value;
         const m2Val = document.getElementById('m2Caja').value;
         const medidasVal = document.getElementById('medidas').value.trim();
 
         const producto = {
             nombre: document.getElementById('nombre').value.trim(),
+            categoria: document.getElementById('categoria').value.trim(),
             m2Caja: m2Val !== "" ? parseFloat(m2Val) : null,
             medidas: medidasVal !== "" ? medidasVal : null,
             precio: parseFloat(document.getElementById('precio').value)
         };
 
-        if (index === "-1") {
-            inventario.push(producto);
+        if (key === "") {
+            db.push(producto);
         } else {
-            inventario[index] = producto;
+            db.child(key).update(producto);
         }
 
-        filtrarYRenderizar();
         limpiarFormulario();
-        await guardarEnNube();
     });
 
-    function filtrarYRenderizar() {
-        const busqueda = document.getElementById('txtBuscar').value.toLowerCase();
-        let resultado = inventario.filter(prod => prod.nombre.toLowerCase().includes(busqueda));
-        resultado.sort((a, b) => a.nombre.localeCompare(b.nombre));
-        renderTable(resultado);
-    }
-
-    function renderTable(lista) {
-        tableBody.innerHTML = '';
-        if (lista.length === 0) {
-            tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; color: #777;">No hay productos registrados.</td></tr>`;
-            return;
+    function eliminarProducto(key, nombre) {
+        if (confirm(`¿Deseas eliminar "${nombre}"?`)) {
+            db.child(key).remove();
         }
-
-        lista.forEach((prod) => {
-            const indexOriginal = inventario.indexOf(prod);
-            const tr = document.createElement('tr');
-            tr.innerHTML = `
-                <td><strong>${prod.nombre}</strong></td>
-                <td>${prod.m2Caja !== null ? prod.m2Caja + ' m²' : '<span style="color:#aaa;">N/A</span>'}</td>
-                <td>${prod.medidas !== null ? prod.medidas : '<span style="color:#aaa;">N/A</span>'}</td>
-                <td>$${prod.precio.toLocaleString()}</td>
-                <td>
-                    <button class="btn-action btn-edit" onclick="editarProducto(${indexOriginal})">✏️ Editar</button>
-                    <button class="btn-action btn-delete" onclick="eliminarProducto(${indexOriginal})">🗑️ Borrar</button>
-                </td>
-            `;
-            tableBody.appendChild(tr);
-        });
     }
 
-    function editarProducto(i) {
-        const prod = inventario[i];
-        document.getElementById('editIndex').value = i;
+    function editarProducto(key) {
+        const prod = inventario.find(p => p.key === key);
+        if (!prod) return;
+
+        document.getElementById('editKey').value = key;
         document.getElementById('nombre').value = prod.nombre;
+        document.getElementById('categoria').value = prod.categoria || "";
         document.getElementById('m2Caja').value = prod.m2Caja !== null ? prod.m2Caja : "";
         document.getElementById('medidas').value = prod.medidas !== null ? prod.medidas : "";
         document.getElementById('precio').value = prod.precio;
@@ -320,35 +330,103 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    async function eliminarProducto(i) {
-        if (confirm(`¿Deseas eliminar "${inventario[i].nombre}"?`)) {
-            inventario.splice(i, 1);
-            filtrarYRenderizar();
-            await guardarEnNube();
-        }
-    }
-
     function limpiarFormulario() {
         form.reset();
-        document.getElementById('editIndex').value = "-1";
+        document.getElementById('editKey').value = "";
         document.getElementById('btnSubmit').textContent = "💾 Guardar Producto";
     }
 
-    function setEstado(texto, clase) {
-        statusText.textContent = texto;
-        statusText.className = clase;
+    function actualizarDesplegableCategorias() {
+        const catSeleccionada = selCategoria.value;
+        const categoriasUnicas = [...new Set(inventario.map(p => p.categoria).filter(Boolean))].sort();
+        
+        selCategoria.innerHTML = '<option value="TODAS">Todas las Categorías</option>';
+        categoriasUnicas.forEach(cat => {
+            const opt = document.createElement('option');
+            opt.value = cat;
+            opt.textContent = cat;
+            selCategoria.appendChild(opt);
+        });
+
+        selCategoria.value = catSeleccionada;
+    }
+
+    function obtenerListaFiltrada() {
+        const busqueda = document.getElementById('txtBuscar').value.toLowerCase();
+        const catFiltro = selCategoria.value;
+        const minVal = parseFloat(document.getElementById('precioMin').value);
+        const maxVal = parseFloat(document.getElementById('precioMax').value);
+
+        return inventario.filter(prod => {
+            const coincideNombre = prod.nombre.toLowerCase().includes(busqueda);
+            const coincideCategoria = (catFiltro === "TODAS") || (prod.categoria === catFiltro);
+            const pMinOk = isNaN(minVal) || prod.precio >= minVal;
+            const pMaxOk = isNaN(maxVal) || prod.precio <= maxVal;
+
+            return coincideNombre && coincideCategoria && pMinOk && pMaxOk;
+        });
+    }
+
+    function filtrarYRenderizar() {
+        let resultado = obtenerListaFiltrada();
+        resultado.sort((a, b) => a.nombre.localeCompare(b.nombre));
+        renderTable(resultado);
+    }
+
+    function renderTable(lista) {
+        tableBody.innerHTML = '';
+        if (lista.length === 0) {
+            tableBody.innerHTML = `<tr><td colspan="6" style="text-align:center; color: #777;">No hay productos registrados.</td></tr>`;
+            return;
+        }
+
+        lista.forEach((prod) => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td><strong>${prod.nombre}</strong></td>
+                <td><span class="badge-cat">${prod.categoria || 'General'}</span></td>
+                <td>${prod.m2Caja !== null && !isNaN(prod.m2Caja) ? prod.m2Caja + ' m²' : '<span style="color:#aaa;">N/A</span>'}</td>
+                <td>${prod.medidas !== null ? prod.medidas : '<span style="color:#aaa;">N/A</span>'}</td>
+                <td>$${prod.precio.toLocaleString()}</td>
+                <td>
+                    <button class="btn-action btn-edit" onclick="editarProducto('${prod.key}')">✏️ Editar</button>
+                    <button class="btn-action btn-delete" onclick="eliminarProducto('${prod.key}', '${prod.nombre}')">🗑️ Borrar</button>
+                </td>
+            `;
+            tableBody.appendChild(tr);
+        });
+    }
+
+    function exportarExcel() {
+        const lista = obtenerListaFiltrada();
+        if (lista.length === 0) return alert("No hay datos para exportar.");
+
+        const datosExcel = lista.map(p => ({
+            "Producto": p.nombre,
+            "Categoría": p.categoria || "General",
+            "M² por Caja": p.m2Caja !== null ? p.m2Caja : "N/A",
+            "Medidas": p.medidas !== null ? p.medidas : "N/A",
+            "Precio ($)": p.precio
+        }));
+
+        const hoja = XLSX.utils.json_to_sheet(datosExcel);
+        const libro = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(libro, hoja, "Inventario");
+        XLSX.writeFile(libro, `Inventario_${new Date().toISOString().slice(0, 10)}.xlsx`);
     }
 
     function generarPDF() {
-        if (inventario.length === 0) return alert("No hay datos para exportar.");
+        const lista = obtenerListaFiltrada();
+        if (lista.length === 0) return alert("No hay datos para exportar.");
         const { jsPDF } = window.jspdf;
         const doc = new jsPDF();
         doc.setFontSize(16);
         doc.text("Catálogo / Reporte de Productos", 14, 18);
-        const headers = [["Producto", "M² / Caja", "Medidas", "Precio ($)"]];
-        const data = inventario.map(p => [
+        const headers = [["Producto", "Categoría", "M² / Caja", "Medidas", "Precio ($)"]];
+        const data = lista.map(p => [
             p.nombre,
-            p.m2Caja !== null ? `${p.m2Caja} m²` : 'N/A',
+            p.categoria || 'General',
+            p.m2Caja !== null && !isNaN(p.m2Caja) ? `${p.m2Caja} m²` : 'N/A',
             p.medidas !== null ? p.medidas : 'N/A',
             `$${p.precio.toLocaleString()}`
         ]);
