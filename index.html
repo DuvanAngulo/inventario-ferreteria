@@ -39,6 +39,20 @@
             font-size: 1.6rem;
         }
 
+        .status-bar {
+            background-color: #e9ecef;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .status-online { color: #28a745; font-weight: bold; }
+        .status-syncing { color: #ffc107; font-weight: bold; }
+
         .form-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -83,7 +97,6 @@
 
         .btn-save { background-color: var(--primary-color); color: white; flex: 2; min-width: 150px; }
         .btn-pdf { background-color: var(--accent-color); color: white; flex: 1; min-width: 120px; }
-        .btn-backup { background-color: #17a2b8; color: white; flex: 1; min-width: 120px; }
         .btn-clear { background-color: #6c757d; color: white; flex: 1; min-width: 100px; }
 
         .search-container {
@@ -92,15 +105,6 @@
             border-radius: 8px;
             border: 1px solid var(--border-color);
             margin-bottom: 15px;
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .search-box {
-            flex: 1;
-            min-width: 200px;
         }
 
         .search-box input {
@@ -150,7 +154,12 @@
 <body>
 
 <div class="container">
-    <h1>📦 Inventario General de Ferretería</h1>
+    <h1>📦 Inventario General (Sincronizado)</h1>
+
+    <div class="status-bar">
+        <span>Estado de la Nube: <span id="statusText" class="status-online">Conectado</span></span>
+        <button onclick="cargarDesdeNube()" style="padding: 4px 8px; font-size: 0.75rem;">🔄 Recargar Nube</button>
+    </div>
 
     <!-- Formulario -->
     <form id="inventoryForm">
@@ -158,7 +167,7 @@
         <div class="form-grid">
             <div class="form-group">
                 <label for="nombre">Nombre / Descripción *:</label>
-                <input type="text" id="nombre" placeholder="ej. Sanitario Corona / Grifería / Cerámica" required>
+                <input type="text" id="nombre" placeholder="ej. Sanitario Corona / Grifería" required>
             </div>
             <div class="form-group">
                 <label for="m2Caja">M² por Caja (Opcional):</label>
@@ -176,10 +185,7 @@
 
         <div class="btn-group">
             <button type="submit" class="btn-save" id="btnSubmit">💾 Guardar Producto</button>
-            <button type="button" class="btn-pdf" onclick="generarPDF()">📄 PDF</button>
-            <button type="button" class="btn-backup" onclick="exportarBackup()">📥 Descargar Respaldo</button>
-            <button type="button" class="btn-backup" onclick="document.getElementById('fileImport').click()">📤 Cargar Respaldo</button>
-            <input type="file" id="fileImport" accept=".json" style="display: none;" onchange="importarBackup(event)">
+            <button type="button" class="btn-pdf" onclick="generarPDF()">📄 Generar PDF</button>
             <button type="button" class="btn-clear" onclick="limpiarFormulario()">🔄 Limpiar</button>
         </div>
     </form>
@@ -209,13 +215,46 @@
 </div>
 
 <script>
-    let inventario = JSON.parse(localStorage.getItem('inventario_ferreteria')) || [];
+    // REEMPLAZA ESTA URL CON TU URL DE GOOGLE APPS SCRIPT
+    const API_URL = "https://script.google.com/macros/s/AKfycbxAvmPzKK4Nm2nCaSoLkquTRaPbppbdrXwOh2v61aVWKcqG4IKtjhmmbx17Qtydycavxw/exec";
+
+    let inventario = [];
     const form = document.getElementById('inventoryForm');
     const tableBody = document.getElementById('inventoryTable');
+    const statusText = document.getElementById('statusText');
 
-    document.addEventListener('DOMContentLoaded', filtrarYRenderizar);
+    document.addEventListener('DOMContentLoaded', cargarDesdeNube);
 
-    form.addEventListener('submit', (e) => {
+    async function cargarDesdeNube() {
+        setEstado("Cargando...", "status-syncing");
+        try {
+            const res = await fetch(API_URL);
+            inventario = await res.json();
+            filtrarYRenderizar();
+            setEstado("Conectado", "status-online");
+        } catch (err) {
+            console.error(err);
+            setEstado("Error al conectar", "status-syncing");
+        }
+    }
+
+    async function guardarEnNube() {
+        setEstado("Guardando en la nube...", "status-syncing");
+        try {
+            await fetch(API_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(inventario)
+            });
+            setEstado("Conectado", "status-online");
+        } catch (err) {
+            console.error(err);
+            setEstado("Error al guardar", "status-syncing");
+        }
+    }
+
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
         const index = document.getElementById('editIndex').value;
         const m2Val = document.getElementById('m2Caja').value;
@@ -234,9 +273,9 @@
             inventario[index] = producto;
         }
 
-        guardarEnStorage();
         filtrarYRenderizar();
         limpiarFormulario();
+        await guardarEnNube();
     });
 
     function filtrarYRenderizar() {
@@ -249,7 +288,7 @@
     function renderTable(lista) {
         tableBody.innerHTML = '';
         if (lista.length === 0) {
-            tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; color: #777;">No hay productos guardados.</td></tr>`;
+            tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; color: #777;">No hay productos registrados.</td></tr>`;
             return;
         }
 
@@ -281,11 +320,11 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    function eliminarProducto(i) {
+    async function eliminarProducto(i) {
         if (confirm(`¿Deseas eliminar "${inventario[i].nombre}"?`)) {
             inventario.splice(i, 1);
-            guardarEnStorage();
             filtrarYRenderizar();
+            await guardarEnNube();
         }
     }
 
@@ -295,43 +334,9 @@
         document.getElementById('btnSubmit').textContent = "💾 Guardar Producto";
     }
 
-    function guardarEnStorage() {
-        localStorage.setItem('inventario_ferreteria', JSON.stringify(inventario));
-    }
-
-    // Funciones de Respaldo (Backup)
-    function exportarBackup() {
-        if (inventario.length === 0) {
-            alert("No hay productos para exportar.");
-            return;
-        }
-        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(inventario, null, 2));
-        const downloadAnchor = document.createElement('a');
-        downloadAnchor.setAttribute("href", dataStr);
-        downloadAnchor.setAttribute("download", `Respaldo_Inventario_${new Date().toISOString().slice(0, 10)}.json`);
-        document.body.appendChild(downloadAnchor);
-        downloadAnchor.click();
-        downloadAnchor.remove();
-    }
-
-    function importarBackup(event) {
-        const fileReader = new FileReader();
-        fileReader.onload = function(e) {
-            try {
-                const datosCargados = JSON.parse(e.target.result);
-                if (Array.isArray(datosCargados)) {
-                    inventario = datosCargados;
-                    guardarEnStorage();
-                    filtrarYRenderizar();
-                    alert("¡Inventario cargado exitosamente!");
-                } else {
-                    alert("El archivo no tiene el formato correcto.");
-                }
-            } catch (err) {
-                alert("Error al leer el archivo de respaldo.");
-            }
-        };
-        fileReader.readAsText(event.target.files[0]);
+    function setEstado(texto, clase) {
+        statusText.textContent = texto;
+        statusText.className = clase;
     }
 
     function generarPDF() {
