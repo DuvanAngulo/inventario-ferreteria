@@ -1,439 +1,224 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventario General (Tiempo Real)</title>
-    <!-- Librerías de Firebase, PDF y Excel -->
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-    
-    <style>
-        :root {
-            --primary-color: #0056b3;
-            --secondary-color: #f8f9fa;
-            --accent-color: #28a745;
-            --excel-color: #1d6f42;
-            --dark-color: #333;
-            --border-color: #cccccc;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            padding: 15px;
-            color: var(--dark-color);
-        }
-
-        .container {
-            max-width: 1050px;
-            margin: 0 auto;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            font-size: 1.6rem;
-        }
-
-        .status-bar {
-            background-color: #e9ecef;
-            padding: 10px 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.9rem;
-        }
-
-        .status-ok { color: var(--accent-color); font-weight: bold; }
-        .status-error { color: #dc3545; font-weight: bold; }
-
-        .form-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 12px;
-            margin-bottom: 20px;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group label {
-            font-weight: 600;
-            margin-bottom: 5px;
-            font-size: 0.85rem;
-        }
-
-        .form-group input {
-            padding: 10px;
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            font-size: 0.95rem;
-        }
-
-        .btn-group {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 25px;
-        }
-
-        button {
-            padding: 10px 18px;
-            border: none;
-            border-radius: 5px;
-            font-size: 0.95rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .btn-save { background-color: var(--primary-color); color: white; flex: 2; min-width: 150px; }
-        .btn-pdf { background-color: var(--accent-color); color: white; flex: 1; min-width: 120px; }
-        .btn-excel { background-color: var(--excel-color); color: white; flex: 1; min-width: 120px; }
-        .btn-clear { background-color: #6c757d; color: white; flex: 1; min-width: 100px; }
-
-        .search-container {
-            background-color: var(--secondary-color);
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            margin-bottom: 15px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
-        }
-
-        .search-container input, .search-container select {
-            width: 100%;
-            padding: 9px;
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            box-sizing: border-box;
-            font-size: 0.9rem;
-        }
-
-        .table-responsive {
-            overflow-x: auto;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 5px;
-            font-size: 0.9rem;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        th {
-            background-color: var(--primary-color);
-            color: white;
-            font-weight: 600;
-        }
-
-        tr:nth-child(even) { background-color: #f8f9fa; }
-
-        .badge-cat {
-            background-color: #e2e8f0;
-            color: #334155;
-            padding: 3px 8px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        .btn-action {
-            padding: 5px 8px;
-            font-size: 0.8rem;
-            margin-right: 3px;
-        }
-
-        .btn-edit { background-color: #ffc107; color: #212529; }
-        .btn-delete { background-color: #dc3545; color: white; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Productos - Ferre</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+    .header {
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      margin: 0 0 10px 0;
+      color: #1e293b;
+    }
+    .stats {
+      font-size: 14px;
+      color: #64748b;
+    }
+    .filters-card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: flex-end;
+    }
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-width: 200px;
+    }
+    .filter-group label {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #475569;
+    }
+    input[type="text"], input[type="number"] {
+      padding: 10px 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input[type="text"]:focus, input[type="number"]:focus {
+      border-color: #2563eb;
+    }
+    .price-inputs {
+      display: flex;
+      gap: 8px;
+    }
+    .price-inputs input {
+      width: 100%;
+    }
+    .table-container {
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    th, td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    th {
+      background-color: #0f172a;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    tr:hover {
+      background-color: #f8fafc;
+    }
+    .badge-code {
+      background-color: #e2e8f0;
+      color: #334155;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 13px;
+    }
+    .price {
+      font-weight: 600;
+      color: #166534;
+    }
+    .no-results {
+      padding: 30px;
+      text-align: center;
+      color: #94a3b8;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>📦 Inventario General (Tiempo Real)</h1>
+  <div class="header">
+    <h1>Consulta de Productos</h1>
+    <div class="stats" id="totalStats">Cargando productos...</div>
+  </div>
 
-    <div class="status-bar">
-        <span>Estado de la Base de Datos: <span id="statusText" class="status-ok">Conectando...</span></span>
+  <!-- Controles de Búsqueda y Filtro -->
+  <div class="filters-card">
+    <div class="filter-group">
+      <label for="searchQuery">Buscar por Código o Nombre:</label>
+      <input type="text" id="searchQuery" placeholder="Ej: 013389 o PORCELANATO..." oninput="filtrarProductos()">
     </div>
 
-    <!-- Formulario -->
-    <form id="inventoryForm">
-        <input type="hidden" id="editKey" value="">
-        <div class="form-grid">
-            <div class="form-group">
-                <label for="nombre">Nombre / Descripción *:</label>
-                <input type="text" id="nombre" placeholder="ej. Sanitario Corona / Grifería" required>
-            </div>
-            <div class="form-group">
-                <label for="categoria">Categoría *:</label>
-                <input type="text" id="categoria" placeholder="ej. Baños, Cerámica, Herramientas" required>
-            </div>
-            <div class="form-group">
-                <label for="m2Caja">M² por Caja (Opcional):</label>
-                <input type="number" step="0.01" id="m2Caja" placeholder="ej. 1.44">
-            </div>
-            <div class="form-group">
-                <label for="medidas">Medidas (Opcional):</label>
-                <input type="text" id="medidas" placeholder="ej. 60x60 cm">
-            </div>
-            <div class="form-group">
-                <label for="precio">Precio ($) *:</label>
-                <input type="number" step="0.01" id="precio" placeholder="ej. 45000" required>
-            </div>
-        </div>
-
-        <div class="btn-group">
-            <button type="submit" class="btn-save" id="btnSubmit">💾 Guardar Producto</button>
-            <button type="button" class="btn-pdf" onclick="generarPDF()">📄 Exportar PDF</button>
-            <button type="button" class="btn-excel" onclick="exportarExcel()">📊 Exportar Excel</button>
-            <button type="button" class="btn-clear" onclick="limpiarFormulario()">🔄 Limpiar</button>
-        </div>
-    </form>
-
-    <!-- Búsqueda y Filtros -->
-    <div class="search-container">
-        <input type="text" id="txtBuscar" placeholder="🔍 Buscar Nombre..." oninput="filtrarYRenderizar()">
-        <select id="selCategoria" onchange="filtrarYRenderizar()">
-            <option value="TODAS">Todas las Categorías</option>
-        </select>
-        <input type="number" id="precioMin" placeholder="💵 Precio Mín ($)" oninput="filtrarYRenderizar()">
-        <input type="number" id="precioMax" placeholder="💵 Precio Máx ($)" oninput="filtrarYRenderizar()">
+    <div class="filter-group">
+      <label>Rango de Precio ($):</label>
+      <div class="price-inputs">
+        <input type="number" id="minPrice" placeholder="Mínimo" oninput="filtrarProductos()">
+        <input type="number" id="maxPrice" placeholder="Máximo" oninput="filtrarProductos()">
+      </div>
     </div>
+  </div>
 
-    <!-- Tabla -->
-    <div class="table-responsive">
-        <table>
-            <thead>
-                <tr>
-                    <th>Producto</th>
-                    <th>Categoría</th>
-                    <th>M² / Caja</th>
-                    <th>Medidas</th>
-                    <th>Precio</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody id="inventoryTable"></tbody>
-        </table>
-    </div>
-</div>
+  <!-- Tabla de Productos -->
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 150px;">Código</th>
+          <th>Nombre / Descripción</th>
+          <th style="width: 150px; text-align: right;">Precio</th>
+        </tr>
+      </thead>
+      <tbody id="tablaProductos">
+        <!-- Contenido generado dinámicamente -->
+      </tbody>
+    </table>
+  </div>
 
-<script>
-    // Configuración con tus credenciales reales de Firebase
-    const firebaseConfig = {
-        apiKey: "AIzaSyAsCunhFTYQALbjtCldAClPnYsrd4ybj0k",
-        authDomain: "inventarioferreteria-54d91.firebaseapp.com",
-        databaseURL: "https://inventarioferreteria-54d91-default-rtdb.firebaseio.com",
-        projectId: "inventarioferreteria-54d91",
-        storageBucket: "inventarioferreteria-54d91.firebasestorage.app",
-        messagingSenderId: "125843981156",
-        appId: "1:125843981156:web:4b003b8fB375c280743071",
-        measurementId: "G-940CKTH0JP"
-    };
+  <!-- Carga de la constante PRODUCTOS_DATA de data.js -->
+  <script src="data.js"></script>
 
-    // Inicializar Firebase
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.database().ref('inventario');
+  <script>
+    // Se lee PRODUCTOS_DATA cargado desde data.js
+    const productos = typeof PRODUCTOS_DATA !== 'undefined' ? PRODUCTOS_DATA : [];
 
-    let inventario = [];
-    const form = document.getElementById('inventoryForm');
-    const tableBody = document.getElementById('inventoryTable');
-    const selCategoria = document.getElementById('selCategoria');
-    const statusText = document.getElementById('statusText');
+    function renderizarTabla(lista) {
+      const tbody = document.getElementById("tablaProductos");
+      const stats = document.getElementById("totalStats");
+      tbody.innerHTML = "";
 
-    // Escuchar cambios en Tiempo Real
-    db.on('value', (snapshot) => {
-        const data = snapshot.val();
-        inventario = [];
-        
-        if (data) {
-            Object.keys(data).forEach(key => {
-                inventario.push({ key, ...data[key] });
-            });
-        }
+      stats.textContent = `Mostrando ${lista.length} de ${productos.length} productos`;
 
-        statusText.textContent = "⚡ Conectado y Sincronizado";
-        statusText.className = "status-ok";
+      if (lista.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="3" class="no-results">No se encontraron productos con los criterios ingresados.</td></tr>`;
+        return;
+      }
 
-        actualizarDesplegableCategorias();
-        filtrarYRenderizar();
-    }, (error) => {
-        console.error(error);
-        statusText.textContent = "❌ Error de Permisos (Verifica Realtime Database)";
-        statusText.className = "status-error";
+      const fragment = document.createDocumentFragment();
+
+      // Limitamos a los primeros 200 resultados para mantener un rendimiento óptimo al escribir
+      const itemsToRender = lista.slice(0, 200);
+
+      itemsToRender.forEach(prod => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td><span class="badge-code">${prod.codigo || ''}</span></td>
+          <td>${prod.nombre || ''}</td>
+          <td style="text-align: right;" class="price">$${Number(prod.precio || 0).toLocaleString('es-CO')}</td>
+        `;
+        fragment.appendChild(tr);
+      });
+
+      tbody.appendChild(fragment);
+
+      if (lista.length > 200) {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td colspan="3" class="no-results">... Se encontraron ${lista.length} productos. Afina tu búsqueda para ver resultados más específicos.</td>`;
+        tbody.appendChild(tr);
+      }
+    }
+
+    function filtrarProductos() {
+      const query = document.getElementById("searchQuery").value.toLowerCase().trim();
+      const minPrice = parseFloat(document.getElementById("minPrice").value) || 0;
+      const maxPriceVal = document.getElementById("maxPrice").value;
+      const maxPrice = maxPriceVal !== "" ? parseFloat(maxPriceVal) : Infinity;
+
+      const resultados = productos.filter(prod => {
+        const codigo = (prod.codigo || "").toLowerCase();
+        const nombre = (prod.nombre || "").toLowerCase();
+        const precio = Number(prod.precio) || 0;
+
+        // Búsqueda por coincidencia en Código O Nombre
+        const coincideTexto = codigo.includes(query) || nombre.includes(query);
+
+        // Búsqueda por Rango de Precios
+        const coincidePrecio = precio >= minPrice && precio <= maxPrice;
+
+        return coincideTexto && coincidePrecio;
+      });
+
+      renderizarTabla(resultados);
+    }
+
+    // Renderizado inicial al cargar
+    document.addEventListener("DOMContentLoaded", () => {
+      renderizarTabla(productos);
     });
-
-    // Guardar o Editar
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const key = document.getElementById('editKey').value;
-        const m2Val = document.getElementById('m2Caja').value;
-        const medidasVal = document.getElementById('medidas').value.trim();
-
-        const producto = {
-            nombre: document.getElementById('nombre').value.trim(),
-            categoria: document.getElementById('categoria').value.trim(),
-            m2Caja: m2Val !== "" ? parseFloat(m2Val) : null,
-            medidas: medidasVal !== "" ? medidasVal : null,
-            precio: parseFloat(document.getElementById('precio').value)
-        };
-
-        if (key === "") {
-            db.push(producto);
-        } else {
-            db.child(key).update(producto);
-        }
-
-        limpiarFormulario();
-    });
-
-    function eliminarProducto(key, nombre) {
-        if (confirm(`¿Deseas eliminar "${nombre}"?`)) {
-            db.child(key).remove();
-        }
-    }
-
-    function editarProducto(key) {
-        const prod = inventario.find(p => p.key === key);
-        if (!prod) return;
-
-        document.getElementById('editKey').value = key;
-        document.getElementById('nombre').value = prod.nombre;
-        document.getElementById('categoria').value = prod.categoria || "";
-        document.getElementById('m2Caja').value = prod.m2Caja !== null ? prod.m2Caja : "";
-        document.getElementById('medidas').value = prod.medidas !== null ? prod.medidas : "";
-        document.getElementById('precio').value = prod.precio;
-        document.getElementById('btnSubmit').textContent = "✏️ Actualizar Producto";
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function limpiarFormulario() {
-        form.reset();
-        document.getElementById('editKey').value = "";
-        document.getElementById('btnSubmit').textContent = "💾 Guardar Producto";
-    }
-
-    function actualizarDesplegableCategorias() {
-        const catSeleccionada = selCategoria.value;
-        const categoriasUnicas = [...new Set(inventario.map(p => p.categoria).filter(Boolean))].sort();
-        
-        selCategoria.innerHTML = '<option value="TODAS">Todas las Categorías</option>';
-        categoriasUnicas.forEach(cat => {
-            const opt = document.createElement('option');
-            opt.value = cat;
-            opt.textContent = cat;
-            selCategoria.appendChild(opt);
-        });
-
-        selCategoria.value = catSeleccionada;
-    }
-
-    function obtenerListaFiltrada() {
-        const busqueda = document.getElementById('txtBuscar').value.toLowerCase();
-        const catFiltro = selCategoria.value;
-        const minVal = parseFloat(document.getElementById('precioMin').value);
-        const maxVal = parseFloat(document.getElementById('precioMax').value);
-
-        return inventario.filter(prod => {
-            const coincideNombre = prod.nombre.toLowerCase().includes(busqueda);
-            const coincideCategoria = (catFiltro === "TODAS") || (prod.categoria === catFiltro);
-            const pMinOk = isNaN(minVal) || prod.precio >= minVal;
-            const pMaxOk = isNaN(maxVal) || prod.precio <= maxVal;
-
-            return coincideNombre && coincideCategoria && pMinOk && pMaxOk;
-        });
-    }
-
-    function filtrarYRenderizar() {
-        let resultado = obtenerListaFiltrada();
-        resultado.sort((a, b) => a.nombre.localeCompare(b.nombre));
-        renderTable(resultado);
-    }
-
-    function renderTable(lista) {
-        tableBody.innerHTML = '';
-        if (lista.length === 0) {
-            tableBody.innerHTML = `<tr><td colspan="6" style="text-align:center; color: #777;">No hay productos registrados.</td></tr>`;
-            return;
-        }
-
-        lista.forEach((prod) => {
-            const tr = document.createElement('tr');
-            tr.innerHTML = `
-                <td><strong>${prod.nombre}</strong></td>
-                <td><span class="badge-cat">${prod.categoria || 'General'}</span></td>
-                <td>${prod.m2Caja !== null && !isNaN(prod.m2Caja) ? prod.m2Caja + ' m²' : '<span style="color:#aaa;">N/A</span>'}</td>
-                <td>${prod.medidas !== null ? prod.medidas : '<span style="color:#aaa;">N/A</span>'}</td>
-                <td>$${prod.precio.toLocaleString()}</td>
-                <td>
-                    <button class="btn-action btn-edit" onclick="editarProducto('${prod.key}')">✏️ Editar</button>
-                    <button class="btn-action btn-delete" onclick="eliminarProducto('${prod.key}', '${prod.nombre}')">🗑️ Borrar</button>
-                </td>
-            `;
-            tableBody.appendChild(tr);
-        });
-    }
-
-    function exportarExcel() {
-        const lista = obtenerListaFiltrada();
-        if (lista.length === 0) return alert("No hay datos para exportar.");
-
-        const datosExcel = lista.map(p => ({
-            "Producto": p.nombre,
-            "Categoría": p.categoria || "General",
-            "M² por Caja": p.m2Caja !== null ? p.m2Caja : "N/A",
-            "Medidas": p.medidas !== null ? p.medidas : "N/A",
-            "Precio ($)": p.precio
-        }));
-
-        const hoja = XLSX.utils.json_to_sheet(datosExcel);
-        const libro = XLSX.utils.book_new();
-        XLSX.utils.book_append_sheet(libro, hoja, "Inventario");
-        XLSX.writeFile(libro, `Inventario_${new Date().toISOString().slice(0, 10)}.xlsx`);
-    }
-
-    function generarPDF() {
-        const lista = obtenerListaFiltrada();
-        if (lista.length === 0) return alert("No hay datos para exportar.");
-        const { jsPDF } = window.jspdf;
-        const doc = new jsPDF();
-        doc.setFontSize(16);
-        doc.text("Catálogo / Reporte de Productos", 14, 18);
-        const headers = [["Producto", "Categoría", "M² / Caja", "Medidas", "Precio ($)"]];
-        const data = lista.map(p => [
-            p.nombre,
-            p.categoria || 'General',
-            p.m2Caja !== null && !isNaN(p.m2Caja) ? `${p.m2Caja} m²` : 'N/A',
-            p.medidas !== null ? p.medidas : 'N/A',
-            `$${p.precio.toLocaleString()}`
-        ]);
-        doc.autoTable({ startY: 25, head: headers, body: data, theme: 'grid' });
-        doc.save(`Inventario_${new Date().toISOString().slice(0, 10)}.pdf`);
-    }
-</script>
-
+  </script>
 </body>
 </html>
