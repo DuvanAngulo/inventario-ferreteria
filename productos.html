@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e40af">
+  <title>Productos - Ferretería</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>📋 Productos y Precios</h1>
+    <p class="subtitulo">Busca por código o nombre</p>
+  </header>
+
+  <main class="contenedor">
+    <a href="index.html" class="btn-volver">← Volver al inicio</a>
+
+    <input
+      type="search"
+      id="buscador"
+      class="buscador"
+      placeholder="Ej: LAVAMANOS, 1381, KP04..."
+      autocomplete="off"
+    >
+
+    <div class="filtros">
+      <button class="filtro-chip activo" data-filtro="todos">Todos</button>
+      <button class="filtro-chip" data-filtro="con-stock">Con stock</button>
+      <button class="filtro-chip" data-filtro="sin-stock">Sin stock</button>
+      <button class="filtro-chip" data-filtro="precio-cero">Precio en 0</button>
+    </div>
+
+    <p class="contador" id="contador"></p>
+
+    <div class="lista-items" id="listaProductos">
+      <p class="vacio-msg">Cargando productos...</p>
+    </div>
+  </main>
+
+  <script src="js/productos.js"></script>
+</body>
+</html>

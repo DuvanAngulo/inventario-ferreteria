@@ -1,0 +1,3890 @@
+[
+  {
+    "codigo": "0000FK022",
+    "nombre": "LISTELLO GALESA NEGRO CU",
+    "saldo": 15,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "101661001",
+    "nombre": "SANITARIO POWER ONE BLANCO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "120072031",
+    "nombre": "PORCELANATO REC CEMENTO BEIGE  120X60 CD UND",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "135076841",
+    "nombre": "MUEBLE ELIPSE PLUS 60 CM CON LAVAMANOS BCO Y DESAGUE",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "135236861",
+    "nombre": "MUEBLE PONTUS PLUS BLANCO 60 CM CON LAVAMANOS Y DESAGUE",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "138086841",
+    "nombre": "MUEBLE ELIPSE PLUS 80 CM CON LVM BCO",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1381",
+    "nombre": "ALUMINIO GUARD. ARCO 10mmx2.5mm CROMO BRILLANTE A1 Atrim",
+    "saldo": 50,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1381",
+    "nombre": "ALUMINIO GUARD. ARCO 10mmx2.5mm CROMO BRILLANTE A1 Atrim",
+    "saldo": 40,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1381",
+    "nombre": "ALUMINIO GUARD. ARCO 10mmx2.5mm CROMO BRILLANTE A1 Atrim",
+    "saldo": 38,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1381",
+    "nombre": "ALUMINIO GUARD. ARCO 10mmx2.5mm CROMO BRILLANTE A1 Atrim",
+    "saldo": 30,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1381",
+    "nombre": "ALUMINIO GUARD. ARCO 10mmx2.5mm CROMO BRILLANTE A1 Atrim",
+    "saldo": 28,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1381",
+    "nombre": "ALUMINIO GUARD. ARCO 10mmx2.5mm CROMO BRILLANTE A1 Atrim",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1384",
+    "nombre": "ALUMINIO GUARD. ARCO 10mm x 2,5m ORO BRILLANTE Atrim",
+    "saldo": 45,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1385",
+    "nombre": "ALUMINIO GUARD. ARCO 10mm x 2,5m ORO ROSA Atrim",
+    "saldo": 68,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1385",
+    "nombre": "ALUMINIO GUARD. ARCO 10mm x 2,5m ORO ROSA Atrim",
+    "saldo": 65,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1387",
+    "nombre": "ALUMINIO GUARD. ARCO 10mm x 2,5m BRONCE NOCHE Atrim",
+    "saldo": 31,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1394",
+    "nombre": "ALUMINIO GRARD. ARCO 12mm x 2,5m CROMO BRILLANTE A1 Atrim",
+    "saldo": 49,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1394",
+    "nombre": "ALUMINIO GRARD. ARCO 12mm x 2,5m CROMO BRILLANTE A1 Atrim",
+    "saldo": 39,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1701",
+    "nombre": "ALUMINIO GUARD. QUADRA 10 x 10mm x 2,5m BRONCE NOCHE Atrim",
+    "saldo": 39,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1703",
+    "nombre": "ALUMINIO GUARD. QUADRA 10 x 10mm x 2,5m NEGRO MATE Atrim",
+    "saldo": 20,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1704",
+    "nombre": "ALUMINIO GUARD. QUADRA 10 x 10mm x 2,5m ORO ROSA Atrim",
+    "saldo": 29,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1707",
+    "nombre": "ALUMINIO GUARD. ARCO 10mm x 2,5m NEGRO MATE Atrim",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1709",
+    "nombre": "ALUMINIO GUARD. ARCO 12mm x 2,5m BRONCE NOCHE Atrim",
+    "saldo": 40,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1712",
+    "nombre": "ALUMINIO GUARD. ARCO 12mm x 2,5m NEGRO MATE Atrim",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1713",
+    "nombre": "ALUMINIO GUARD. ARCO 12mm x 2,5m ORO ROSA",
+    "saldo": 74,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "1994",
+    "nombre": "PROTECTOR DE ESCALA CROMADO MATE 10.5X20mmX2.5m Atrim",
+    "saldo": -3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "201103101",
+    "nombre": "PARED ADRIATICO AZUL CLARO CU (1,51)",
+    "saldo": 6.04,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "203901001",
+    "nombre": "PEDESTAL FREE",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "206591791",
+    "nombre": "PISO COLONIAL MULTICOLOR CD (VENTA POR CJ 1.10)",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "207281791",
+    "nombre": "PISO PARED FEZ CIRCULOS MT 19.8X19.8 CU",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "207291791",
+    "nombre": "PISO PARED FEZ PETALOS MT19.8X19.8 CU",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "207301791",
+    "nombre": "PISO PARED FEZ FLORES MT 19.8X19.8 CD",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "2249",
+    "nombre": "ALUMINIO PERFIL T 10MM X 6MM X 2.5 MTS Atrim",
+    "saldo": 8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "225028223",
+    "nombre": "BLANCO BRILLANTE 30.5X30.5 (1.86)",
+    "saldo": -13.02,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "226262251",
+    "nombre": "COMBO HAPPY ROJO II CON SEMIP 4,8",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "230174",
+    "nombre": "LAVAPLATOS MONOCONTROL VITAL EMP 53X43 SOCODA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "2320",
+    "nombre": "EPS GUARDAESCOBA BLANCO EXTRA LINE 100mm x 2,5m Atrim",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "2352",
+    "nombre": "GUARDAESCOBA ZOCALO ROBLE OSCURO EPS 2,50M Atrim",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "2354",
+    "nombre": "GUARDAESCOBA ZOCALO NOGAL CLARO 2,50M Atrim",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "236848",
+    "nombre": "LAVAPLATOS DOBLE POCETA TRADICIONAL 84X51 SOCODA",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "237801",
+    "nombre": "LAVAPLATOS DERECHO MEZCLADOR 100X52 SOCODA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "237802",
+    "nombre": "LAVAPLATOS IZQUIERDO MEZCLADOR 100X52 SOCODA",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "238457",
+    "nombre": "LAVAPLATOS BASIC EMPOTRAR 60X40 CM SOCODA",
+    "saldo": -2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "251041791",
+    "nombre": "LISTELLO ASSAM MULTICOLOR CU ML",
+    "saldo": 18,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "251051791",
+    "nombre": "LISTELLO ENCANTO MUTICOLOR CU ML",
+    "saldo": 18,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "251111791",
+    "nombre": "LISTELLO VICUNA MULTICOLOR CU ML",
+    "saldo": 18,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "252011791",
+    "nombre": "LISTELLO COLONNA MT ML",
+    "saldo": 36,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "252031791",
+    "nombre": "LISTELLO BARISTA MULTICOLOR CU ML",
+    "saldo": 18,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "255651791",
+    "nombre": "LISTELLO MATTINA MULTICOLOR CU",
+    "saldo": 18,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "255671761",
+    "nombre": "LISTELO SUGAR CAFE CU",
+    "saldo": 15.5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "255681761",
+    "nombre": "LISTELLO IRLANDES CAFE CU",
+    "saldo": 17.75,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "255951151",
+    "nombre": "LISTELLO TRESIA AZUL CU",
+    "saldo": 0.25,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "255951601",
+    "nombre": "LISTELLO TRESIA NEGRO CU",
+    "saldo": 5.5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "255951601",
+    "nombre": "LISTELLO TRESIA NEGRO CU",
+    "saldo": 2.5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "255951761",
+    "nombre": "LISTELLO TRESIA CAFE CU PROMO PROMO",
+    "saldo": 2.25,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "255961601",
+    "nombre": "LISTELLO KANDALA NEGRO CU",
+    "saldo": 6.5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "259171151",
+    "nombre": "LISTELLO TANGER AZUL 8X25 CU",
+    "saldo": 9.5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "259171451",
+    "nombre": "LISTELLO TANGER VERDE 8X25 CD",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "259171601",
+    "nombre": "LISTELLO TANGER NEGRO 8X25 CU",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "265861761",
+    "nombre": "LISTELLO SEÑORIAL CAFE",
+    "saldo": 34.75,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "265861761",
+    "nombre": "LISTELLO SEÑORIAL CAFE",
+    "saldo": 32.75,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "267051501",
+    "nombre": "PISO PARED HEXAGONO_CERAMICO PRADERA GRIS 23.2X26.8 CD VTA CJ 0.52",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "267171761",
+    "nombre": "LISTELLO LORCA CAFE CU",
+    "saldo": 0.5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "267241151",
+    "nombre": "LISTELLO COLOMBO AZUL CU PROMO",
+    "saldo": -0.5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "267241761",
+    "nombre": "LISTELLO COLOMBO CAFE CU PROMO",
+    "saldo": 0.25,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "267511151",
+    "nombre": "LISTELLO HAWAIANA AZUL CU",
+    "saldo": 0.5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "267511451",
+    "nombre": "LISTELLO HAWAIANA VERDE CU",
+    "saldo": 0.5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "267791761",
+    "nombre": "LISTELLO SNACK CAFE 8X25 CD",
+    "saldo": 0,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "267791761",
+    "nombre": "LISTELLO SNACK CAFE 8X25 CD",
+    "saldo": 1.5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "268551601",
+    "nombre": "LISTELLO LIBELULA NEGRA CU PROMO",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "268551761",
+    "nombre": "LISTELLO LIBELULA CAFE CU",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "268721761",
+    "nombre": "LISTELLO MACARENA CAFE 8X25",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "269641791",
+    "nombre": "LISTELLO CALENDA MULTICO CU",
+    "saldo": 18,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "269661791",
+    "nombre": "LISTELLO PECATTO MULTICO CU",
+    "saldo": 18,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "278491001",
+    "nombre": "SANITARIO ALUVIA BLANCO PLUS REDONDO",
+    "saldo": -2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "2833",
+    "nombre": "ALUMINIO SEPARADOR ARCO 10mm x 2.5 m Atrim",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "2888",
+    "nombre": "ALUMINO GUARDACANTO FLECHA CROMO MATE 8MM",
+    "saldo": 60,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "2938",
+    "nombre": "ALUMINIO/PVC NARIZ ESCALERA CROMO MATE NEGRO PASO 30x42mm x 2,5m Atrim",
+    "saldo": 29,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "300931001",
+    "nombre": "SANITARIO MANANTIAL BLANCO PRO REDONDO",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "300931601",
+    "nombre": "SANITARIO MANANTIAL NEGRO PRO RD BTN",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "301301761",
+    "nombre": "MOSAICO ZORA CAFE CU",
+    "saldo": 11,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "303211451",
+    "nombre": "MOSAICO SELVA VERDE CD",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "303211501",
+    "nombre": "MOSAICO SELVA GRIS CD",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "304931501",
+    "nombre": "MOSAICO GIBRALTAR GRIS 30X30 CARA U",
+    "saldo": 16,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "304961501",
+    "nombre": "MOSAICO VICTORIA GRIS CU",
+    "saldo": 21,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "307861601",
+    "nombre": "MOSAICO MECCA NEGRO",
+    "saldo": 30,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "307871601",
+    "nombre": "MOSAICO CUARZO NEGRO CU",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "307891341",
+    "nombre": "MOSAICO TERRA OCRE",
+    "saldo": 20,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "307901031",
+    "nombre": "MOSAICO TERRA BEIGE CU PROMO",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "311031001",
+    "nombre": "ESTUCOR MAX X 25 KG",
+    "saldo": -5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "311821001",
+    "nombre": "ESTUCOR ESTUCO DE RELLENO X25KG",
+    "saldo": -3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "312001001",
+    "nombre": "ESTUCOR ESTUCO PROFESIONAL 25KG",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "316131151",
+    "nombre": "DECO PARED BASE DECO AGUALINDA AZUL 31.5X31.5 CU (VENTA POR CJ 1,29)",
+    "saldo": -3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "316151151",
+    "nombre": "BASE DECO FUENTE AZUL CU (VENTA POR CAJA 1.29)",
+    "saldo": -20,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "316391151",
+    "nombre": "PARED CUADRADO MALAGA DECO AZUL 31.5X31.5 CD",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "318001001",
+    "nombre": "ESTUCOR ESTUCO PLASTICO 30KG 5GL",
+    "saldo": -8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "325011111",
+    "nombre": "COMBO LAGUNA AZUL CON PEDESTAL 4.8",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "325051411",
+    "nombre": "COMBO LAGUNA VERDE CLARO CON PEDESTAL 4.8",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "340021001",
+    "nombre": "SANITARIO LAGUNA BLANCO 4.8",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "3421",
+    "nombre": "ALUMINIO GUARDA CANTO. QUADRA 10x10mm x 2,50m CROMO BRI Atrim",
+    "saldo": 51,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "3423",
+    "nombre": "GUARDACANTO CUADRADO CROMO MATE 10mm x 2.50m Atrim",
+    "saldo": 30,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "3428TXA",
+    "nombre": "ALUMINIO QUADRA ARENA STONE 10x10mm x 2,5m Atrim",
+    "saldo": 30,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "3428TXC",
+    "nombre": "ALUMINIO QUADRA CONCRETO STONE10x10mm x 2,5m Atrim",
+    "saldo": 30,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "3428TXM",
+    "nombre": "ALUMINIO QUADRA MARFIL STONE 10x10mm x 2,5m Atrim",
+    "saldo": 25,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "3428TXN",
+    "nombre": "ALUMINIO QUADRA NIQUEL STONE 10x10mm x 2,5m Atrim",
+    "saldo": 29,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "3428TXT",
+    "nombre": "ALUMINIO QUADRA TIZA STONE 10x10mm x 2,5m Atrim",
+    "saldo": 26,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "3428TXT",
+    "nombre": "ALUMINIO QUADRA TIZA STONE 10x10mm x 2,5m Atrim",
+    "saldo": 24,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "3433",
+    "nombre": "ALUMINIO GUARD QUADRA CEPILLADA NEGRO BRILLANTE 12X10MM X 2.5M Atrim",
+    "saldo": 17,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "3434",
+    "nombre": "ALUMINIO GUARD QUADRA ORO ROSA BRILLANTE CEPILLADO 12X 10MM X2.5M Atrim",
+    "saldo": 16,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "3436",
+    "nombre": "ALUMINIO GUARD QUADRA 12X10MMX205M ORO MATE CEPILLADO",
+    "saldo": 21,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "357373031",
+    "nombre": "PARED SALMA ESTRUCTURADA BEIGE",
+    "saldo": 28,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "380120001",
+    "nombre": "GRIFLEX LVM/LVP 60CM",
+    "saldo": 20,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "380130001",
+    "nombre": "GRIFLEX ACOPLE SANITARIO EA",
+    "saldo": 299,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "380130001",
+    "nombre": "GRIFLEX ACOPLE SANITARIO EA",
+    "saldo": 298,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "380140001",
+    "nombre": "GRIFLEX ACOPLE LAVAPLATOS Y LAVAMANOS",
+    "saldo": 19,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "402901001",
+    "nombre": "PINTURA PROFESSIONAL 1A MANO BLANCO 1 GALON",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "406021791",
+    "nombre": "PARED LISTON LONDRES MULTICOLOR 15X40 CARA UNICA",
+    "saldo": 0,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "407211001",
+    "nombre": "PINTURA IMPERMEABILIZANTE BLANCO 1 GALON",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "407410131",
+    "nombre": "PARAGUAS ULTRA BLANCO 1 GALON",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "407411241",
+    "nombre": "ESTUCO ACRILICO NEVADO 30 KILOS",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "407411361",
+    "nombre": "TEXTUCO CUNETE 28KG",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "407413331",
+    "nombre": "PANEL TEC PROFESSIONAL INTERIORES CUNETE 27KG",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "407915111",
+    "nombre": "PINTURA EXTERIORES ALTA COBERTURA 1 GALON",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "407961001",
+    "nombre": "PINTURA ANTIBACTERIAL SATINADA BLANCA 1GL",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "407961111",
+    "nombre": "PINTURA EVITAMANCHAS BLANCO 1 GALON",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "407961201",
+    "nombre": "PINTURA PRO ALTA COBERTURA BLANCO 5 GL",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "407961921",
+    "nombre": "PINTURA TOTAL BLANCA EN GALON",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "407961931",
+    "nombre": "PINTURA TOTAL BLANCO 5 GL",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "409011791",
+    "nombre": "LISTON AMIRA MULTICOLOR CU",
+    "saldo": 37,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "409011791",
+    "nombre": "LISTON AMIRA MULTICOLOR CU",
+    "saldo": 29,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "409021791",
+    "nombre": "LISTON KAFETIER MULTICOLOR CU",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "409031791",
+    "nombre": "LISTON MANCHESTER MULTICOLOR CU",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "409031791",
+    "nombre": "LISTON MANCHESTER MULTICOLOR CU",
+    "saldo": 11,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "409051791",
+    "nombre": "LISTON SELENA MULTICOLOR CU",
+    "saldo": 0,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "411220001",
+    "nombre": "CJ GF LAVAMANOS INDIVIDUAL CTA BALTA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "411230001",
+    "nombre": "SUBCJ GF LVM BALTA SENCILLA CTA",
+    "saldo": 15,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "411240001",
+    "nombre": "CJ GF LVM BALTA SENCILLA PLNCA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "414150001",
+    "nombre": "REGISTRO DUCHA BALTA CRUCETA",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "414240001",
+    "nombre": "MEZCLADOR DE DUCHA 8P BALTA CTA SSB",
+    "saldo": 15,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "414295551",
+    "nombre": "MEZCLADOR DE DUCHA 8P NOGAL SSB",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "414545551",
+    "nombre": "DUCHA SENCILLA BALTA PALANCA PRO REG DALIA",
+    "saldo": 13,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "414645551",
+    "nombre": "DUCHA BALTA 8P CTA CON REG KORAL MATEBLACK",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "415020001",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAPLATOS 8 PULGADAS CRUCETA BALTA",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "415110001",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAPLATOS SENCILLA PARED PALANCA BALTA PICO PRAKTI",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "415130001",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAPLATOS SENCILLA BALTA CRUCETA",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "430/10",
+    "nombre": "ACERO INOX 430 TERMINACION ESPLENDOR 10X10MM BRILL Atrim",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "434245551",
+    "nombre": "REGISTRO DH DALIA",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "434350001",
+    "nombre": "DUCHA NOGAL SENCILLA REDONDA COSMOS SSB",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "434401601",
+    "nombre": "LISTON ROYAL NEGRO",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "434470001",
+    "nombre": "TELEDUCHA NOGAL",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "434505551",
+    "nombre": "REGADERA NOGAL CON BRAZO (CUADRADA SOLID)",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "435991791",
+    "nombre": "LISTON DENIS MULTICOLOR 13,5 X 43",
+    "saldo": 13,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "436731791",
+    "nombre": "LISTON BON APETIT 13,5 X 43",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "437491761",
+    "nombre": "LISTON SNACK CAFE PROMO",
+    "saldo": 0,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "437571151",
+    "nombre": "LISTON AGUACLARA AZUL CU PROMO",
+    "saldo": 25,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "437591791",
+    "nombre": "LISTON MOLIENDA MULTICOLOR",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "437621791",
+    "nombre": "LISTON CONFITURA MULTICO CU PROMO",
+    "saldo": 0,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "439021791",
+    "nombre": "LISTON ZAFRA MULTICOLOR CU",
+    "saldo": 16,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "452391791",
+    "nombre": "LISTON KORE",
+    "saldo": 0,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "452731791",
+    "nombre": "LISTON DAMANIA MULTICOLOR CU 15X45",
+    "saldo": 0,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "452741151",
+    "nombre": "LISTON BLU CU",
+    "saldo": 15,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "452841791",
+    "nombre": "LISTON CALAMONTE COOK MULTICOLOR CU",
+    "saldo": 31,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "452871791",
+    "nombre": "LISTON NATURA MULTICOLOR CU",
+    "saldo": 23,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "452901791",
+    "nombre": "PARED LISTON CRACOVIA MULTICOLOR 15X45 CARA UNICA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "453701151",
+    "nombre": "LISTON ESTRUCTURADO FILIPO AZUL CU",
+    "saldo": 0,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "453711501",
+    "nombre": "LISTOIN VINIL GRIS CU",
+    "saldo": 44,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "453711761",
+    "nombre": "LISTON VINIL CAFE",
+    "saldo": 42,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "453741791",
+    "nombre": "LISTON CATANIA KIWI MULTCOLOR",
+    "saldo": 14,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "453761601",
+    "nombre": "LISTON COOKING NEGRO",
+    "saldo": 22,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "453791791",
+    "nombre": "LISTONES TERMAL AROMA MULTICOLOR 15X45 CU",
+    "saldo": 23,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "453801791",
+    "nombre": "LISTONES TERMAL VELAS MULTICOLOR 15X45 CU",
+    "saldo": 13,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "453891791",
+    "nombre": "LISTON JANA MULTICOLOR CU",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "453981791",
+    "nombre": "LISTON UBATUBA MULTICOLOR 15X45 CU",
+    "saldo": 23,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "454291031",
+    "nombre": "LISTON ZIMBABWE BEIGE CU 15X45",
+    "saldo": 16,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "454411791",
+    "nombre": "LISTON AMARANTO MULTICOLOR CU 15X45",
+    "saldo": 28,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "454911031",
+    "nombre": "LISTON GRECO BEIGE 15X45",
+    "saldo": 8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "455041031",
+    "nombre": "LISTON RAICES BEIGE CU",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "455041501",
+    "nombre": "LISTON RAICES GRIS CU",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "455140001",
+    "nombre": "CJ GF LVP 8P NOGAL NUEVA",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "455161791",
+    "nombre": "LISTON MUNAI MULTICOLOR 15X45 CU",
+    "saldo": 13,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "455171301",
+    "nombre": "LISTON ZARELA DORADO 15X45 CU",
+    "saldo": 23,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "455910001",
+    "nombre": "CJ GF  LAVAPLATOS 8P NOGAL  LT",
+    "saldo": 11,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "455920001",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAPLATOS 8P NOGAL LT",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "455930001",
+    "nombre": "CJ GF LVP SENCILLA NOGAL LT",
+    "saldo": 14,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "458451791",
+    "nombre": "LISTON ESTRUCTURADO MESETA MULTICOLOR",
+    "saldo": 0,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "459761791",
+    "nombre": "LISTON MONTECARLO MULTICOLOR 15X45",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "459761791",
+    "nombre": "LISTON MONTECARLO MULTICOLOR 15X45",
+    "saldo": 24,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "459821601",
+    "nombre": "LISTON ESPARTA NEGRO CU",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "504415551",
+    "nombre": "REGISTRO DH NOGAL",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "513092031",
+    "nombre": "PISO HELSINKI BEIGE 51X51 CD (2.08)",
+    "saldo": 6.24,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "514111001",
+    "nombre": "LAVAMANOS MILANO BLANCO CON PEDESTAL SIN GRIFERIA",
+    "saldo": -5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "517000001",
+    "nombre": "SUBCJ GF LVP SENC PARED FONTANA",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "5193",
+    "nombre": "ESPACIADOR AUTONIVELANTE CLIP 2,0mm AMARILLO-PAQX100PCS Atrim",
+    "saldo": 47,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "5194",
+    "nombre": "ESPACIADOR AUTONIVELANTE CLIP 3,0mm ROJO-PAQX100PCS Atrim",
+    "saldo": 20,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "5291",
+    "nombre": "ESPACIADOR AUTONIVELANTE CUÑA PQTX100 Atrim",
+    "saldo": 13,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "5292",
+    "nombre": "ESPACIADOR AUTONIVELANTE 1.5mm CLIP X 100 Atrim",
+    "saldo": 45,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "5297",
+    "nombre": "PINZA HERRAMIENTA PARA SISTEMA NIVELADOR A1 Atrim",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "541130001",
+    "nombre": "CONJUNTO GRIFERIA LAVAMANOS NOGAL SENCILLO",
+    "saldo": 38,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "541135551",
+    "nombre": "SUBCJ GF LVM SENCILLA NOGAL",
+    "saldo": 19,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "541140001",
+    "nombre": "CJ CF LVM 4P NOGAL",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "541145551",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAMANOS 4 PULGADAS NOGAL",
+    "saldo": -2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "544135551",
+    "nombre": "REGISTRO DUCHA BRIZA",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "552114761",
+    "nombre": "PISO CABIN CAFE 55.2X55.2 CD CJ 1.82",
+    "saldo": -3.64,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "600841791",
+    "nombre": "BASE DECORADA CENIT MULTICOLOR CU",
+    "saldo": 17,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "601251791",
+    "nombre": "MURAL VIRGEN DE GUADALUPE 3 PCS CU.",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "601411791",
+    "nombre": "BASE DECORADA ELOY MULTICOLOR CU PROMO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "601711221",
+    "nombre": "BASE DECORADA PERSEO HIELO CD",
+    "saldo": -2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "601711501",
+    "nombre": "BASE DECORADA PERSEO GRIS CD",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "601721151",
+    "nombre": "BASE DECORADA CORAL AZUL CU",
+    "saldo": 11,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "602021031",
+    "nombre": "BASE DECO CAPPUCCINO BEIGE CU",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "602141761",
+    "nombre": "BASE DECO INDI TRIANGULAR CAFE CU",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "602151501",
+    "nombre": "BASE DECO INDI ROMBOS GRIS CU",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "602311791",
+    "nombre": "MURAL COLONNA MULTICOLOR 2 PCS",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "602401601",
+    "nombre": "BASE DECORADA CHIPRE NEGRO CU",
+    "saldo": 18,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "602401761",
+    "nombre": "BASE DECORADA CHIPRE TAUPE CU",
+    "saldo": 48,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "602811791",
+    "nombre": "BASE DECORADA BODEGON MULTICOLOR",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "602821791",
+    "nombre": "BASE DECORADA KOBE MULTICOLOR CU",
+    "saldo": 28,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "603181791",
+    "nombre": "BASE DECORADA DINASTIA MULTICOLOR",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "603201791",
+    "nombre": "BASE DECORADA DUBAI",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "603221791",
+    "nombre": "BASE DECORADA BALEARES MULTICOLOR CU",
+    "saldo": 11,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "603271711",
+    "nombre": "MUEBLE ALUVIA MIEL LAVAMANOS BLANCO 40X35",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "603276091",
+    "nombre": "MUEBLE ALUVIA HABANO LAVAMANOS BLANCO 40X35",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "603431501",
+    "nombre": "MURAL SERENI GRIS CU",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "603441791",
+    "nombre": "BASE DECORADA BIRKA MULTICOLOR CU",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "603451791",
+    "nombre": "BASE DECORADA SAZON MULTICOLOR CU",
+    "saldo": 18,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "603461791",
+    "nombre": "BASE DECORADA JARDIN MULTICOLOR CU",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "603701791",
+    "nombre": "BASE DECORADA MARISELA MULTICOLOR",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "603711791",
+    "nombre": "BASE DECORADA MICAELA MT",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "603731791",
+    "nombre": "PARED BASE DECORADA KAI MT 30X60 CU",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "604321791",
+    "nombre": "BASE DECO TORINO MULTICOLOR CU",
+    "saldo": 11,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "604331791",
+    "nombre": "MURAL CAZORLA MULTICOLOR 2 PCS CU",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "604401711",
+    "nombre": "MUEBLE ALUVIA MIEL LAVAMANOS BLANCO 60X45",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "604891601",
+    "nombre": "BASE DECORADA COFFE TIME",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "605441601",
+    "nombre": "BASE DECO BROOKLYN NEGRO CU",
+    "saldo": 0,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "606321601",
+    "nombre": "PARED BASE DECORADA JUDA NEGRO 30X60 CU",
+    "saldo": 11,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "606401501",
+    "nombre": "PARED BASE DECORADA SIMEON GRIS 30X60 CU",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "606411791",
+    "nombre": "PARED BASE DECORADA ROMERO MULTICOLOR 30X60 CU",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "606461791",
+    "nombre": "PARED BASE DECORADA CALENO MULTICOLOR 30X60",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "606481791",
+    "nombre": "PARED BASE DECORADA CRISOL MULTICOLOR 30X60 CU",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "607251791",
+    "nombre": "BASE DECO TEA TIME MULTICO CU",
+    "saldo": 27,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "608421791",
+    "nombre": "BASER DECORADA SERENA MULTICOLOR",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "608459791",
+    "nombre": "BASE DECORADA BOTANICA MULTICOLOR CD M2 (1.44)",
+    "saldo": 2.88,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "608512601",
+    "nombre": "Piso PORCELANATO Artik Negro 60X60 CU (1.80)",
+    "saldo": -1.8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "609262791",
+    "nombre": "FACHALETA SAN ANTONIO MULTICOLOR CD (1.80)",
+    "saldo": -1.8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "609282601",
+    "nombre": "FACHALETA MACAO NEGRO 30X60 CU(1.80)",
+    "saldo": 3.6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "609351001",
+    "nombre": "ASIENTO ACTIVE CS REDONDO BLANCO (Montecarlo Novo Rd, Montecarlo Advance, SmartRd, Manantial )",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "609351031",
+    "nombre": "ASIENTO ACTIVE CS REDONDO BONE (Montecarlo Novo Rd, Montecarlo Advance, SmartRd, Manantial)",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "609461001",
+    "nombre": "ASIENTO ACTIVE CS ALONGADO BLANCO (Smart al, MontecarloNovo al, Power one, Prestigio y Aquajet)",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "609461031",
+    "nombre": "ASIENTO ACTIVE CS ALONGADO BONE(Smart al, MontecarloNovo al, Power one, Prestigio y Aquajet)",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "609471031",
+    "nombre": "ASIENTO CRESCENTO BONE CS ALONGADO",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "614281711",
+    "nombre": "MUEBLE ALUVIA ELEVADO MIEL LAVAMANOS BLANCO 45X45",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "614286091",
+    "nombre": "MUEBLE ALUVIA ELEVADO HABANO LAVAMANOS BLANCO 45X45",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "614406091",
+    "nombre": "MUEBLE ALUVIA ELEVADO HABANO LAVAMANOS BLANCO 60X45",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "631145551",
+    "nombre": "CJ GF LVM MONOC NEPAL MEDIA CB SR",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "6446404",
+    "nombre": "PIRAGUA ANCHA 1/2 PULG CRUDO 6MTS",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "6446405",
+    "nombre": "PIRAGUA ALUMINIO ESPANOL CRUDO ALUMINIO 6MTS",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "6446407",
+    "nombre": "PIRLAN PROTECTOR ESCALA 30X24MM CRUDO 6MTS",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "703200001",
+    "nombre": "GRIFERIA ORINAL TRADICIONAL CORONA CON DESAGUE",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "706150001",
+    "nombre": "DISPENSADOR DE TOALLAS",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "706530001",
+    "nombre": "SILLA DE SEGURIDAD PLEGABLE PARA DUCHA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "706540001",
+    "nombre": "BARRA DE SEGURIDAD 12 PULG",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "706550001",
+    "nombre": "BARRA DE SEGURIDAD 18 PULGADAS",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "706560001",
+    "nombre": "BARRA DE SEGURIDAD 24 PULG",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "706570001",
+    "nombre": "BARRA DE SEGURIDAD 30 PULG",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "706580001",
+    "nombre": "BARRA DE SEGURIDAD EN L",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "706630001",
+    "nombre": "PAPELERA METALICA",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "706670001",
+    "nombre": "PORTA ROLLO METALICO",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "707630001",
+    "nombre": "VALVULA COMPUERTA 1/2 P",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "716010001",
+    "nombre": "TOALLERO REPISA HOTEL",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "716505551",
+    "nombre": "CANASTILLA JABONERA DE DUCHA",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "716540001",
+    "nombre": "CANASTILLA DUCHA ESQUINERA L",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "716550001",
+    "nombre": "CANASTILLA PROFUNDA DUCHA C JABONERA",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "717440001",
+    "nombre": "VALVULA DE BOLA TROCABLE GAS 1/2 PULGADA",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "719630001",
+    "nombre": "SIFON METALICO EN P",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "724080001",
+    "nombre": "BRAZO REGADERA TECHO NOVO",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "724475551",
+    "nombre": "BRAZO TECHO NOVO M10 CP5",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "734250001",
+    "nombre": "DUCHA ELECTRICA 110V MEGADUCHA",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "734300001",
+    "nombre": "DUCHA ELECTRICA 110V SUPER POWER 3T",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "735015551",
+    "nombre": "KIT POCETA LAVAPLATOS MULTIFUNCION BAROLO",
+    "saldo": 17,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "735015551",
+    "nombre": "KIT POCETA LAVAPLATOS MULTIFUNCION BAROLO",
+    "saldo": 15,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "735015551",
+    "nombre": "KIT POCETA LAVAPLATOS MULTIFUNCION BAROLO",
+    "saldo": 14,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "737620001",
+    "nombre": "BRIDA SANITARIA PROFESIONAL 3Y4",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "738000001",
+    "nombre": "VALVULA DESCARGA NUKI 2P CATAPULTA 26 BOTON",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "738020001",
+    "nombre": "VAL DESCARGA NUKI OP CATAPULTA",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "755431791",
+    "nombre": "BASE DECORADA MARMI MULTICOLOR CU",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "755441791",
+    "nombre": "BASE DECORADA VERTICE MT CU",
+    "saldo": 15,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "771636571",
+    "nombre": "LAVADERO PROVENZA PREMIUM",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "784520001",
+    "nombre": "TORRE DE DUCHA CRISTALIA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "784530001",
+    "nombre": "TORRE DE DUCHA ZEN",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "784670001",
+    "nombre": "BARRA DESLIZABLE REDONDA",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "784820001",
+    "nombre": "DESVIADOR DUCHA METALICO",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "784905551",
+    "nombre": "TELEDUCHA NOGAL PRO",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "791000001",
+    "nombre": "LLAVE JARDIN DE BOLA",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "796068881",
+    "nombre": "TOALLERO BARRA MILAN",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "797060001",
+    "nombre": "VALVULA BOLA MANIJA MARIPOSA",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "797070001",
+    "nombre": "VALVULA BOLA MANIJA MARPOSA HEMBRA MACHO 1/2 PULGADA AGUA",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "797180001",
+    "nombre": "CHEQUE RESORTE VERT 1/2P",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "797270001",
+    "nombre": "LLAVE JARDIN CORRIENTE 1/2 X 3/4 PULGADAS SATINADA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "797280001",
+    "nombre": "LLAVE JARDIN CORRIENTE BRONCE 1/2 X 3/4 PULGADAS",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "797340001",
+    "nombre": "REGULACION METALICA CRUCETA HEMBRA MACHO 1/2 PULGADA",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "797360001",
+    "nombre": "LLAVE LAVADORA CRUCETA 1/2X3/4 PULGADA",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "797500001",
+    "nombre": "VALVULA BOLA PVC SOLDAR 1/2P",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "797550001",
+    "nombre": "VALVULA DE BOLA PVC  ROSCAR 1/2P",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "799070001",
+    "nombre": "HERRAJES ASIENTO ACTIVE CS BLANCO",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "799290001",
+    "nombre": "VALVULA DUAL AJUSTABLE 2 PULGADAS - 3\"",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "799350001",
+    "nombre": "REGADERA CASCADE CON BRAZO CROMO",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "806100001",
+    "nombre": "VALVULA DESCARGA NUKI ADV 32CM",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "806200001",
+    "nombre": "VALVULA DESCARGA NUKI ADV 26CM",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "816420001",
+    "nombre": "VALVULA DUAL AJUSTABLE 1 PULGADA - 3\"",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "821602221",
+    "nombre": "ASIENTO COMODOR CIERRE TRADICIONAL REDONDO NEGRO",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "822240001",
+    "nombre": "ASIENTO COMODOR NARANJA REDONDO",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "822250001",
+    "nombre": "ASIENTO COMODOR ROJO CT REDONDO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "838146491",
+    "nombre": "MUEBLE FUSSION PLUS 80 CM CON LAVAMANOS Y DESAGUE",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "861636371",
+    "nombre": "BARRA MOVIL 1.20",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "861636371",
+    "nombre": "BARRA MOVIL 1.20",
+    "saldo": 0,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "901041001",
+    "nombre": "PEGACOR BLANCO INTERIORES X10KG",
+    "saldo": -4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "901191501",
+    "nombre": "PEGACOR FLEX GRIS X 25 KG",
+    "saldo": -2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "901391501",
+    "nombre": "PEGACOR CERAMICO GRIS 25 KG",
+    "saldo": -4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "901411501",
+    "nombre": "PEGACOR PORCELANICO GRIS X 25 KG",
+    "saldo": -4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "901521501",
+    "nombre": "PEGACOR ULTRA GRIS X 25 KG",
+    "saldo": -4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "903051011",
+    "nombre": "CONCOLOR SUPER BLANCO 5 KG",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "903051511",
+    "nombre": "CONCOLOR GRIS CLARO X 5 KG",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "903051691",
+    "nombre": "CONCOLOR NEGRO PROFUNDO X 5 KG",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "903051741",
+    "nombre": "CONCOLOR CHOCOLATE X 5 KG",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "903231761",
+    "nombre": "GUARDESCOBAS MADERA TABACO CAFE 9X90.9 2 CD",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "903261901",
+    "nombre": "CONCOLOR ACQUA BLANCO HUESO",
+    "saldo": -7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "909000001",
+    "nombre": "ASIENTO CONFORTO CT REDONDO BLANCO",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "909089991",
+    "nombre": "TAPA MONTECARLO ADVANCE BLANCO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "918",
+    "nombre": "PROTECTOR ESCALON BORDER NEGRO PVC 10X18mmX2.50 Atrim",
+    "saldo": 18,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "919",
+    "nombre": "PROTECTOR ESCALON BORDER GRIS CLARO PVC 10X18mmX2.50 Atrim",
+    "saldo": 30,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "925",
+    "nombre": "PROTECTOR ESCALON BORDER BEIGE PVC 10X18mmX2.50 Atrim",
+    "saldo": 40,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "931100001",
+    "nombre": "DESAGUE SENC INTEGREADO CR",
+    "saldo": 11,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "931120001",
+    "nombre": "DESAGUE SENCILLO SIN REBOSE",
+    "saldo": 20,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "931340001",
+    "nombre": "SIFON BOTELLA GRIS",
+    "saldo": 19,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "933000001",
+    "nombre": "DESAGUE SIFON LVM - ORINAL",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "935030001",
+    "nombre": "CANASTILLA LAVAPLATOS PLASTICA 4PLG",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "935080001",
+    "nombre": "SIFON EN P",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "935170001",
+    "nombre": "CANASTILLA LAVAPLATOS CROMADA 4 PLG",
+    "saldo": 17,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "935180001",
+    "nombre": "CANASTILLA LAVAPLATOS 4P CROMADO + SIFON EN P",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "935385551",
+    "nombre": "DESAGUE PUSH METAL SIN REBOSE",
+    "saldo": 16,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "935470001",
+    "nombre": "SIFON FLEXIBLE GRIS",
+    "saldo": 19,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "935490001",
+    "nombre": "SIFON FLEXIBLE METALIZADO",
+    "saldo": 8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "935550001",
+    "nombre": "SIFON BOTELLA AHORRAESPACIO",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "935930001",
+    "nombre": "SIFON BOTELLA COLA FLEXIBLE NEGRO",
+    "saldo": -2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "936070001",
+    "nombre": "DESAGUE PUSH GRIVAL FLEXIBLE SIN REBOSE",
+    "saldo": 34,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937000001",
+    "nombre": "REJILLA DE VENTILACION",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937013331",
+    "nombre": "REJILLA VENTILACION GAS",
+    "saldo": 57,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937035551",
+    "nombre": "TAPA REGISTRO M35 CP3",
+    "saldo": 25,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937075551",
+    "nombre": "REJILLA REDONDA 3P CROMADA M8 CP5",
+    "saldo": 23,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937125551",
+    "nombre": "REJILLA DE PISO INOX MATE BLACK 30X11",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937155551",
+    "nombre": "REJILLA DE PISO INOXIDABLE GUNMETAL 11X11 CENTIMETROS",
+    "saldo": 14,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937165551",
+    "nombre": "REJILLA DE PISO INOXIDABLE GUNMETAL 30X11 CENTIMETROS",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937175551",
+    "nombre": "REJILLA DE PISO INOXIDABLE GUNMETAL 60X11 CENTIMETROS",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937185551",
+    "nombre": "REJILLA DE PISO INOX MATE BLACK 10X10",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937200001",
+    "nombre": "REJILLA PISO VANGUAR 10X10CM 11/2 _3 PULGADAS",
+    "saldo": 32,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937210001",
+    "nombre": "REJILLA PISO CONTEMPORANEA 10X10 11/2-3P",
+    "saldo": 63,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937300001",
+    "nombre": "REJILLA VENTILACION 30X30",
+    "saldo": 14,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937500001",
+    "nombre": "MANIJA GRIVAL SANITARIO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937540001",
+    "nombre": "REJILLA DE PISO CUAD ACERO INOX 10X10",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937560001",
+    "nombre": "REJILLA DE PISO RECT ACERO INOX SLIM 1MT",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937570001",
+    "nombre": "SIFON BOTELLA FLEXIBLE METALIZADO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937590001",
+    "nombre": "SIFON BOTELLA FLEXIBLE DOBLE",
+    "saldo": -2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937630001",
+    "nombre": "SIFON BOTELLA FLEXIBLE GRIS",
+    "saldo": -5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937635551",
+    "nombre": "KIT BRIDA + REGULACIÓN + GRIFLEX SANITARIO CROSS",
+    "saldo": 20,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937730001",
+    "nombre": "REJILLA DE PISO RECT ACERO INOX 30CM",
+    "saldo": 11,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937740001",
+    "nombre": "REJILLA DE PISO RECTANGULAR ACERO INOX 60CM",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937800001",
+    "nombre": "REJILLA DE PISO RECTANGULAR EN ACERO INOXIDABLE DE 30X11 CM",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937850001",
+    "nombre": "REJILLA DE PISO RECT ACERO INOX 80CM",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "937990001",
+    "nombre": "REJILLA GRIVAL CUADRADA ANTIEMPOZAMIENTO",
+    "saldo": 11,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "938010001",
+    "nombre": "REJILLA GRIVAL CUADRADA ANTIEMPOZAMIENTO NEGRA",
+    "saldo": 25,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "947140001",
+    "nombre": "GRIFERIA ORINAL PARED PUSH ENTRADA SUPERIOR EXPUESTO 3/4P + RACOR",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "957900001",
+    "nombre": "REGULACION PLAST 1/2 LVM/LVP/SAN",
+    "saldo": 20,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "959080001",
+    "nombre": "ASIENTO VERSATILE BLANCO CS REDONDO",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "960520001",
+    "nombre": "RODEL DIA 10MM WIDIA",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "961460001",
+    "nombre": "CORTADORA PRACTIC 60",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "967660001",
+    "nombre": "REG LAVADORA PASTICO",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "967670001",
+    "nombre": "REGULACION SATINADA 1/2 LVM/SANT",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "967700001",
+    "nombre": "REGULACION SATINADA 3/4 LAVADORA",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "977210001",
+    "nombre": "LLAVE DE JARDIN LIVIANA",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "977920001",
+    "nombre": "LLAVE JARDIN PESADA SATIN",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "979110001",
+    "nombre": "LLAVE JARDIN EXTENSION PALANCA",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "979120001",
+    "nombre": "LLAVE COCINA EXTENSION CRUCETA",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993051001",
+    "nombre": "CONCOLOR BLANCO HUESO X 2 K",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993051011",
+    "nombre": "CONCOLOR SUPER BLANCO X 2KG",
+    "saldo": -3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993051051",
+    "nombre": "CONCOLOR BEIGE X 2KG",
+    "saldo": -4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993051051",
+    "nombre": "CONCOLOR BEIGE X 2KG",
+    "saldo": -5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993051051",
+    "nombre": "CONCOLOR BEIGE X 2KG",
+    "saldo": -6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993051051",
+    "nombre": "CONCOLOR BEIGE X 2KG",
+    "saldo": -7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993051231",
+    "nombre": "CONCOLOR BLANCO ANTIGUO X 2 KG",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993051511",
+    "nombre": "CONCOLOR GRIS CLARO X 2 KG",
+    "saldo": -2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993051561",
+    "nombre": "CONCOLOR TAUPE X 2 KG",
+    "saldo": -2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993051561",
+    "nombre": "CONCOLOR TAUPE X 2 KG",
+    "saldo": -4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993051711",
+    "nombre": "CONCOLOR LADRILLO X 2 KG",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993051741",
+    "nombre": "CONCOLOR CHOCOLATE 2 KG",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993051781",
+    "nombre": "CONCOLOR AZUL AGUAMARINA 2KG",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993055001",
+    "nombre": "CONCOLOR GRIS CALIDO X2KG",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993057501",
+    "nombre": "CONCOLOR ARENA X 2 KG",
+    "saldo": -5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993057501",
+    "nombre": "CONCOLOR ARENA X 2 KG",
+    "saldo": -10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "993057501",
+    "nombre": "CONCOLOR ARENA X 2 KG",
+    "saldo": -11,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "9990105000070",
+    "nombre": "PORCELANATO TOSCANA CALIZA 60X120 UND Intermatex",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AE4000001",
+    "nombre": "REGISTRO DH ARTESA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AL6070001",
+    "nombre": "TOALLERO BARRA VAAL",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AM0006781",
+    "nombre": "ALACENA SAVONA",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AM0096741",
+    "nombre": "ALACENA PROVENZA",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AM0106541",
+    "nombre": "ALACENA BILBAO",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AM7006671",
+    "nombre": "ALACENA SAVONA PLUS",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AM7016421",
+    "nombre": "ALACENA SAVONA AGAVE-FRESNO",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV4010001",
+    "nombre": "DUCHA ALUVIA PALANCA 8P",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV4030001",
+    "nombre": "MEZCLADOR DE DUCHA 8P ALUVIA PALANCA",
+    "saldo": 8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV4050001",
+    "nombre": "DUCHA ALUVIA PALANCA SENCILLA",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV4060001",
+    "nombre": "DUCHA ALUVIA TRICRUCETA SENCILLA",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV4070001",
+    "nombre": "REGISTRO DH ALUVIA PALANCA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV4080001",
+    "nombre": "REGISTRO DH ALUVIA TCTA",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV4100001",
+    "nombre": "SUBCJ GF LVM LLV IND ALUVIA PALANCA",
+    "saldo": 11,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV4110001",
+    "nombre": "CJ GF LVM LLV IND ALUVIA PALANCA",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV4130001",
+    "nombre": "SUBCJ GF LVM MONOC ALUVIA PALANCA",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV4140001",
+    "nombre": "SUBCONJUNTO GF LAVAPLATOS MONOCONTROL ALUVIA",
+    "saldo": 8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV4175551",
+    "nombre": "SUBCJ GF LVM MONOCONTROL ALUVIA MATE BLACK",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV4185551",
+    "nombre": "SUBCJ GF LVP MONOC ALUVIA MATE BLACK",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV5010001",
+    "nombre": "CONJUNTO GRIFERIA LAVAPLATOS ALUVIA SENCILLA PALANCA",
+    "saldo": 27,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV5020001",
+    "nombre": "CONJUNTO GRIFERIA LAVAPLATOS ALUVIA SENCILLA TRICRUCETA",
+    "saldo": 8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV5030001",
+    "nombre": "SUBCJ GF LVP ALUVIA PALANCA SENCILLA",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV5040001",
+    "nombre": "SUBCJ GF LVP ALUVIA TRICRUCETA SENCILLA",
+    "saldo": -2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV5100001",
+    "nombre": "CONJUNTO GRIFERIA LAVAPLATOS ALUVIA 8P SOBREPONER PALANCA",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV5120001",
+    "nombre": "CONJUNTO GRIFERIA LAVAPLATOS 8P SOBREP TCTA ALUVIA",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV6000001",
+    "nombre": "KIT ACCESORIOS ALUVIA X6",
+    "saldo": 14,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "AV6010001",
+    "nombre": "KIT ACCESORIOS X4 ALUVIA",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "BA0065551",
+    "nombre": "KIT ACCESORIOS X3 BARCELONA CROMO",
+    "saldo": 18,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "BA0075551",
+    "nombre": "KIT ACCESORIOS X3 BARCELONA MATEBLACK",
+    "saldo": 14,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "BA0095551",
+    "nombre": "PORTA ROLLO BARCELONA CROMO",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "BA0125551",
+    "nombre": "PORTA ROLLO BARCELONA MATE BLACK",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "BA0140001",
+    "nombre": "DUCHA MONOC BARCELONA CROMO",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "BA0150001",
+    "nombre": "DUCHA MONOC BARCELONA MATE BLACK",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "BM0036741",
+    "nombre": "BARRA PROVENZA",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "BM0046541",
+    "nombre": "BARRA BILBAO",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "BM7026421",
+    "nombre": "BARRA SAVONA AGAVE FRESNO PLUS",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CA1035551",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAMANOS MONOCONTROL MEDIO CASCADE CROMO",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CA1045551",
+    "nombre": "GRIFERIA LAVAMANOS MONOCONTROL ALTO CASCADE",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CA1060001",
+    "nombre": "SUBCONJUNTO LAVAMANOS MONOCONTROL ALTO CASCADE MATE BLACK ANT",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CA1070001",
+    "nombre": "SUBCONJUNTO LAVAMANOS MONOCONTROL MEDIO CASCADE MATE BLACK ANT",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CA1080001",
+    "nombre": "SUBCJ LVM CASCADE MONOC ALTO TITANANT",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CA1100001",
+    "nombre": "SUBCONJUNTO GRIFEIRA LAVAMANOS MONOCONTROL ALTO CASCADE SAHARA ANT",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CA1110001",
+    "nombre": "SUBCONJUNTO LAVAMANOS MONOCONTROL MEDIO CASCADE SAHARA ANT",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CA1130001",
+    "nombre": "DH CASCADE SAHARA PLUS MONOC SSB",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CA4095551",
+    "nombre": "DUCHA CASCADE 8P PRO REG KORAL",
+    "saldo": 8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CA4105551",
+    "nombre": "DUCHA MONOC CASCADE REG KORAL",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CA5015551",
+    "nombre": "SUBCJ GF LVP SOBREP CASCADE 8P",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CA5025551",
+    "nombre": "SUBCJ GF LVP CASCADE MONOC CROMO",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CA6140001",
+    "nombre": "KIT ACCESORIOS CASCADE MATE BLACK X6",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CC4010001",
+    "nombre": "TELEDUCHA CASCADE CROMO",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CM0006781",
+    "nombre": "COCINA SAVONA 1.80 IZQUIERDA",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CM0016781",
+    "nombre": "COCINA SAVONA 1.80 DERECHA",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CM0246741",
+    "nombre": "COCINA PROVENZA DERECHA (MESON BEIGE)",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CM0306741",
+    "nombre": "COCINA PROVENZA DERECHA MESON CLARO",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CM0446321",
+    "nombre": "COCINA OPORTO BELLOTA 1.5  DERECHA",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CM0456321",
+    "nombre": "COCINA OPORTO BELLOTA 1.50 IZQUIERDA",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CM0596541",
+    "nombre": "COCINA BILBAO DERECHA 1.80",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CM0666231",
+    "nombre": "COCINA MONACO LISA 120 IZQ CON GF- CANASTILLA",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CM0786421",
+    "nombre": "COCINA SAVONA AGAVE 1.80 DERECHA",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CM0796421",
+    "nombre": "COCINA SAVONA AGAVE 1.80 IZQUIERDA",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CM0806621",
+    "nombre": "COCINA SAVONA PLUS 1.8 DERECHA PLOMO-",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CM0916541",
+    "nombre": "COCINA BILBAO  H 1.80 IZQUIERDA",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CM0936621",
+    "nombre": "COCINA SAVONA PLUS 1.80 IZQUIERDA HACEB",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CO5401001",
+    "nombre": "ORINAL MEDIANO GRIF. TRADICIONAL CORONA",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CO5501001",
+    "nombre": "ORINAL MEDIANO CON GF PUSH ANTIVANDALICA corona",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CO6681001",
+    "nombre": "KIT LAVAMANOS SAN LORENZO BLANCO CON GF PUSH MESA INST Y DESAGUE",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CU0000001",
+    "nombre": "DUCHA CUSCO MONOC CROMO",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CU5005551",
+    "nombre": "REGADERA CON BRAZO CUSCO CR.",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "CU5015551",
+    "nombre": "REGADERA CON BRAZO CUSCO MATE BLACK",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "D90081101",
+    "nombre": "LISTELLO FRESAS AZULES CU",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "D92591701",
+    "nombre": "LISTELLO GALESA CAFE CU",
+    "saldo": 36,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "DR1025551",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAMANOS MONOCONTROL DRAA MEDIA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "DR1035551",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAMANOS MONOCONTROL DRAA ALTA",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "DR4025551",
+    "nombre": "REGADERA VITA CON BRAZO",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "DR4030001",
+    "nombre": "DUCHA MONOCONTROL DRAA SD",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "DR5015551",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAPLATOS MONOCONTROL DRAA",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "DR6065551",
+    "nombre": "KIT ACCESORIOS X 6 DRAA",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "IP4030001",
+    "nombre": "REGADERA IMPERIAL CON BRAZO",
+    "saldo": -3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KC03MC1211",
+    "nombre": "BASE DECORADA MANDALA 30*60 MULTIC",
+    "saldo": -27.08,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KO1010001",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAMANOS MONOCONTROL KORAL MEDIA",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KO1025551",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAMANOS MONOCONTROL KORAL ALTA",
+    "saldo": 8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KP04BL1152",
+    "nombre": "PORCELANATO ADARA BLANCO 60*60 (1.44) KLP",
+    "saldo": -0.36,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KP04BL1271",
+    "nombre": "PORCELANATO ATHENAS-B 60*120 BLANCO (UND) KLP",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KP04GR1494",
+    "nombre": "PORCELANATO PIETRA REALE GRIS CLARO 60X120",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KP04GS1493",
+    "nombre": "PORCELANATO PIETRA REALE GRIS OSCURO 60X120",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KP04IV1316",
+    "nombre": "PORCELANATO BOSSA TRAVERTINE 60*120 IVORY",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KP04MK1492",
+    "nombre": "PORCELANATO PIETRA REALE MOKA 60X120",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KP5045551",
+    "nombre": "KIT ACCESORIOS KEPLER GUN METAL X4 P",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR1105551",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAMANOS MONOCONTROL KORAL BAJO",
+    "saldo": 11,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR1165551",
+    "nombre": "SUBCJ GF LVM KORAL NIQUEL MONOC MEDIA",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR1195551",
+    "nombre": "SUBCJ GF LVM KORAL MONOC ALTA NIQUEL",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR1220001",
+    "nombre": "GF LVM MONOC KORAL MEDIA MATE BLACK ANTI",
+    "saldo": 8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR1230001",
+    "nombre": "GRIFERIA LAVAMANOS KORAL ALTA MATEBLACK ANTI",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR4035551",
+    "nombre": "MEZCLADOR MONOCONTROL DUCHA KORAL",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR4075551",
+    "nombre": "DH KORAL PRO MONOC SD CROMO",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR4085551",
+    "nombre": "DUCHA MONOCONTROL KORAL MATE BLACK SD",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR5010001",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAPLATOS MONOCONTROL KORAL",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR5025551",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAPLATOS MONOCONTROL KORAL MATE BLACK",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR5035551",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAPLATOS MONOCONTROL KORAL NIQUEL",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR6000001",
+    "nombre": "KIT ACCESORIOS KORAL METALICO X6",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR6040001",
+    "nombre": "JABONERA DUCHA KORAL CROMO",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR6095551",
+    "nombre": "DISPENSADOR DE JABON KORAL NIQUEL",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR6115551",
+    "nombre": "PERCHA KORAL NIQUEL",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR6145551",
+    "nombre": "CEPILLERA KORAL NIQUEL",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR6165551",
+    "nombre": "PORTA ROLLO KORAL NIQUEL",
+    "saldo": 8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR6185551",
+    "nombre": "TOALLERO ARGOLLA KORAL NIQUEL",
+    "saldo": 8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR6205551",
+    "nombre": "JABONERA DUCHA KORAL NIQUEL",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KR6225551",
+    "nombre": "TOALLERO BARRA KORAL NIQUEL",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KV03CF577",
+    "nombre": "MOSAICO IMPERIUM CAFE 30*30 KLP",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KV03DO574",
+    "nombre": "MOSAICO DORATO DORADO 30*30 KLP",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KV03GR578",
+    "nombre": "MOSAICO IMPERIUM GRIS 30*30 KLP",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KV03GR582",
+    "nombre": "MOSAICO ELEMENTS QUARTZ GRIS 30*30 KLP",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KV03NG581",
+    "nombre": "MOSAICO ELEMENTS GLASS NEGRO 30*30 KLP",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "KV03SV568",
+    "nombre": "MOSAICO ELEGANCE SILVER 30*30 KLP",
+    "saldo": 17,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LM0066101",
+    "nombre": "MUEBLE FUSSION VITAL 60 CM CON LAVAMANOS Y DESAGUE",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LM0336351",
+    "nombre": "MUEBLE PLUS VESSEL 70CM CORONASTONE DERECHO",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LM0346351",
+    "nombre": "MUEBLE PLUS VESSEL 70CM CORONASTONE LAVAMANOS SPAZIO IZQUIERDO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LM0356351",
+    "nombre": "MUEBLE PLUS VESSEL 70CM CORONASTONE LAVAMANOS SPAZIO DERECHO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LM0411711",
+    "nombre": "MUEBLE ALUVIA MIEL LAVAMANOS BONE 45X45",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LM1606781",
+    "nombre": "MUEBLE SORRENTO 45 CM CON LAVAMANOS MANANTIAL DUO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LM2441001",
+    "nombre": "COMBO SMART AL BCO MB ALUVIA MIEL ELEVADO 60X45 GF LIQUID MEDIA",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LM4326431",
+    "nombre": "COMBO MUEBLE CASCADE PLUS ROVERE 70 CON LVM CASCADE VESSEL BARU GF LVM CASCADE ALTO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LM4556631",
+    "nombre": "MB FUSSION VESSEL 60 FRESNO CON MESON",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LN6048881",
+    "nombre": "DISPENSADOR DE JABON LENA",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LQ1010001",
+    "nombre": "GRIFERIA LAVAMANOS MONOCONTROL LIQUID ALTA",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LQ1035551",
+    "nombre": "GRIFERIA LAVAMANOS MONOCONTROL LIQUID MEDIA MATE BLACK",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LQ1055551",
+    "nombre": "GRIFERIA LAVAMANOS MONOCONTROL LIQUID ALTA MATE BLACK",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LQ1065551",
+    "nombre": "GRIFERIA LAVAMANOS MONOCONTROL LIQUID ALTA NIQUEL",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LQ4020001",
+    "nombre": "TELEDUCHA LIQUID CROMO",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LQ5000001",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAPLATOS MONOCONTROL LIQUID",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LQ5035551",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAPLATOS MONOCONTROL LIQUID MATE BLACK",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LQ6080001",
+    "nombre": "KIT ACCESORIOS LIQUID X6",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LQ6185551",
+    "nombre": "CEPILLERA LIQUID MATEBLACK",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LQ6215551",
+    "nombre": "JABONERA LIQUID MATEBLACK",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LQ6225551",
+    "nombre": "TOALLLERO BARRA LIQUID MATEBLACK",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "LQ6245551",
+    "nombre": "KIT ACCESORIOS LIQUID MATEBLACK X3",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "NN1020001",
+    "nombre": "SUBCJ GF LVM MONOCONTROL INNA ALTA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "NN5000001",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAPLATOS MONOCONTROL INNA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O10060001",
+    "nombre": "SELLO LENGUETA CLASICO BLANCO",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O10920001",
+    "nombre": "HERRAJE ASIENTO COMODOR BLANCO",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O10990001",
+    "nombre": "HERRAJE ASIENTO LUXOR BLANCO",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O11270001",
+    "nombre": "VASTAGO DUCHA",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O12901541",
+    "nombre": "LAVAMANOS CASCADE GRIS ANTIQUE",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O12901601",
+    "nombre": "LAVAMANOS CASCADE  NEGRO BRILLANTE",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O12904601",
+    "nombre": "LAVAMANOS CASCADE NEGRO MATE EN CJ",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O12920001",
+    "nombre": "GRAPAS LAVAMANOS",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O13011001",
+    "nombre": "LAVAMANOS MARSELLA BLANCO",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O13520001",
+    "nombre": "PORTAESCUDO DUCHA UNIVERSAL",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O13530001",
+    "nombre": "ESCUDO PARED DUCHA UNIVERSAL",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O13741111",
+    "nombre": "HERRAJE ASIENTO AERO BLANCO",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O14111001",
+    "nombre": "LAVAMANOS MILANO BLANCO",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O14111031",
+    "nombre": "LAVAMANOS MILANO BONE",
+    "saldo": -2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O14601001",
+    "nombre": "LAVAMANOS RAZIONALE BLANCO CON DESAGUE EN CAJA",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O14621001",
+    "nombre": "LAVAMANOS RAVENNA BLANCO",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O14621031",
+    "nombre": "LAVAMANOS RAVENNA BONE",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O14680001",
+    "nombre": "CARTUCHO CERAMICO DER CORTO",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O14690001",
+    "nombre": "CARTUCHO CERAMICO IZQ CORTO",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O14700001",
+    "nombre": "CARTUCHO CERAMICO DER LARGO",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O14752711",
+    "nombre": "LAVAMANOS GRANITO CON DESAGÜE",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O14761001",
+    "nombre": "LAVAMANOS SPAZIO BCO II SIN DES",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O14761031",
+    "nombre": "LAVAMANOS SPAZIO BONE II SIN-DESAGUE",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O18090001",
+    "nombre": "BOTON 1 DESCARGA LATERAL",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O18383551",
+    "nombre": "LAVAMANOS GRAFITO SP",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O18393061",
+    "nombre": "LAVAMANOS CITRINO SP",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O18401591",
+    "nombre": "LAVAMANOS ONIX",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O18412721",
+    "nombre": "LAVAMANOS OPALO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O21141111",
+    "nombre": "CARTUCHO VALVULA SANITARIO EMPOTRADA",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O21250001",
+    "nombre": "MANIJA BALTA CRUCETA DUCHA C F",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O21270001",
+    "nombre": "MANIJA BALTA CTA LVM/LVP C F",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O21530001",
+    "nombre": "BOTON DOBLE DESCARGA REDONDO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O22930001",
+    "nombre": "ACOPLE LAVAMANOS ACERO 1/2X1/2 40CM",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O22980001",
+    "nombre": "GRIFLEX INOX MONOCONTROL 50CM",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O23440001",
+    "nombre": "FLAPPER ADVANCE BAJO CONSUMO AGUA EN CAJA",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O23935551",
+    "nombre": "ACOPLE SALIDA TELEDUCHA",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O23940001",
+    "nombre": "GRIFLEX INOX CALENTADOR 40CM",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O24070001",
+    "nombre": "BOTON DOBLE DESCARGA ALONGADO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O24730001",
+    "nombre": "MANIJA ALUVIA PALANCA LAVAMANOS - LAVAPLATOS Y DUCHAS",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O24750001",
+    "nombre": "MANIJA ALUVIA CRUCETA LAVAMANOS - LAVAPLATOS Y DUCHAS",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O25280001",
+    "nombre": "BOTON 1 DESCARGA 38 + ACCIONADOR",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O26011031",
+    "nombre": "SANITARIO ECOCLEAN SINGLE BONE",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O26202251",
+    "nombre": "SANITARIO HAPPY ROJO",
+    "saldo": -2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O30770001",
+    "nombre": "HERRAJE ASIENTO CONFORTO BLANCO",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O31600001",
+    "nombre": "TAPA HAPPY NEGRO",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O32250001",
+    "nombre": "TAPA HAPPY ROJA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O35001031",
+    "nombre": "TAPA LAGUNA BONE",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O35001601",
+    "nombre": "TAPA LAGUNA NEGRO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O36066741",
+    "nombre": "MUEBLE FUSSION CENIZA/LAVAMANOS 60",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O36066761",
+    "nombre": "MUEBLE FUSSION SIENA/LAVAMANOS  60 BLANCO",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O43222451",
+    "nombre": "TANQUE-TAPA-GRIF. HAPPY VERDE 4.8",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O52101031",
+    "nombre": "PEDESTAL VERONA_MILANO BNE",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O60391031",
+    "nombre": "LAVAMANOS ALUVIA 40X35 CM BONE EN CJ",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O60691001",
+    "nombre": "LAVAMANOS ALUVIA BLANCO 60 CM EN CJ",
+    "saldo": 8,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O68403031",
+    "nombre": "PORTA ROLLO ASTRO BONE",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O70701001",
+    "nombre": "SANITARIO CASCADE SINGLE 4.8 EN CJ",
+    "saldo": -1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "O83861001",
+    "nombre": "LAVAMANOS FUSSION 80 CON DESAGUE EN CAJA",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "OB1015551",
+    "nombre": "SUBCJ GF LVM MONOCONTROL BAJO OBI",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "OO1980001",
+    "nombre": "ESPEJO ALUVIA 45CM",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "OO2670001",
+    "nombre": "ESPEJO ALUVIA 60CM",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "OO2876391",
+    "nombre": "ESPEJO ARO 80",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "OO4110001",
+    "nombre": "ESPEJO ARO LED 60CM",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "OO4130001",
+    "nombre": "ESPEJO OVAL 40X100CM",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PL6010001",
+    "nombre": "PORTA ROLLO PALERMO",
+    "saldo": -7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PL6060001",
+    "nombre": "JABONERA DUCHA PALERMO",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PL6100001",
+    "nombre": "KIT ACCESORIOS PALERMO X6",
+    "saldo": 18,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM1010001",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAMANOS MONOCONTROL GRETA MEDIO CROMO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM1020001",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAMANOS MONOCONTROL GRETA ALTO",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM1055551",
+    "nombre": "KIT ACCESORIOS GRETA CROMO X6",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM1155551",
+    "nombre": "SUBCJ GF LVM MONOC GRETA MEDIA MATEBLACK",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM1165551",
+    "nombre": "SUBCJ GF LVM GRETA MONOC ALTO MATEBLACK",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM1185551",
+    "nombre": "SUBCJ GF LVP GRETA MONOC MATEBLACK",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM1295551",
+    "nombre": "SUBCJ GF LVM CUSCO MONOC MEDIA CROMO",
+    "saldo": -2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM1305551",
+    "nombre": "SUBCJ GF LVM CUSCO ALTO MONOCONTROL CROMO",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM1355551",
+    "nombre": "SUBCJ GF LVP MONOC TANTA MATEBLACK",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM4010001",
+    "nombre": "REGADERA GRETA",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM4055551",
+    "nombre": "DUCHA MONOCONTROL GRETA PRO-MATE BLACK SSB",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM4065551",
+    "nombre": "MEZCLADOR MONOCONTROL GRETA SD MATE BLACK",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM4075551",
+    "nombre": "DUCHA GRETA CROMO MONOCONTROL",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM4085551",
+    "nombre": "MEZCLADOR DUCHA MONOCONTROL GRETA CR",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM4155551",
+    "nombre": "KIT ACCESORIOS X3 GRETA DORADO",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM4165551",
+    "nombre": "SUBCJ GF LVM GRETA DORADOMONOC MEDIO",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM4175551",
+    "nombre": "SUBCJ GF LVM GRETA DORADO MONOC ALTO",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PM4465551",
+    "nombre": "DUCHA GRETA MONOCONTROL DORADA",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "PR120T02",
+    "nombre": "LAGOON SERIES - REJILLA PARA PILETA DE PATIO. ABS.SST 2EN1 mate 12x12 cm",
+    "saldo": 12,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "RE4020001",
+    "nombre": "BRAZO REGADERA TECHO RETTO",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "SA0040001",
+    "nombre": "DUCHA MONOCONTROL SERRAT CROMO",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "SA0050001",
+    "nombre": "DUCHA MONOCONTROL SERRAT MATE BLACK",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "SD1000001",
+    "nombre": "SUBCJ GF LVM SOLID SENCILLO CROMO",
+    "saldo": 18,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "SD1010001",
+    "nombre": "CJ GF LVM SOLID SENCILLA CROMO",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "SD4000001",
+    "nombre": "DUCHA SOLID 8P CROMO",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "SD4040001",
+    "nombre": "DUCHA SOLID SENCILLA CROMO",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "SD5000001",
+    "nombre": "SUBCJ GF LVP SOLID SENCILLO",
+    "saldo": 14,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "SD5010001",
+    "nombre": "CJ GF LVP SOLID SENCILLA CROMO",
+    "saldo": 9,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "TH1015551",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAMANOS MONOCONTROL BAJO THAMES",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "TH1025551",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAMANOS MONOCONTROL ALTO THAMES",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "TH4115551",
+    "nombre": "DUCHA MONOCONTROL THAMES PRO SSB",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "TH5015551",
+    "nombre": "SUBCJ GF LVP THAMES MONOC CROMO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "TH6016661",
+    "nombre": "KIT ACCESORIOS THAMES X6",
+    "saldo": 4,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "TO6000001",
+    "nombre": "JABONERA DISPENSADOR TORINO",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "TO6020001",
+    "nombre": "CEPILLERA TORINO",
+    "saldo": 1,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "TO6040001",
+    "nombre": "TOALLERA BARRA TORINO",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "TO6050001",
+    "nombre": "TOALLERO ARGOLLA TORINO",
+    "saldo": 7,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "TT5015551",
+    "nombre": "SUBCJ GF LVP MONOC TANTA",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "VA0005551",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAMANOS SENCILLO VERA MEDIO CROMO",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "VA1008881",
+    "nombre": "SUBCJ GF LVM MONOC VERA BAJO",
+    "saldo": 10,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "VA1018881",
+    "nombre": "SUBCJ GF LVM MONOC ALTO VERA",
+    "saldo": 5,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "VA5035551",
+    "nombre": "GRIFERIA LAVAPLATOS MONOCONTROL VERA BASIC",
+    "saldo": 3,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "VC6038881",
+    "nombre": "JABONERA VENECIA",
+    "saldo": 6,
+    "bodega": "Sede lunas Centro de remodelacion"
+  },
+  {
+    "codigo": "VT5015551",
+    "nombre": "SUBCONJUNTO GRIFERIA LAVAPLATOS MONOCONTROL VENETTO",
+    "saldo": 2,
+    "bodega": "Sede lunas Centro de remodelacion"
+  }
+]

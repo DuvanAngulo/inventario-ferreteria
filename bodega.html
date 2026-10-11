@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e40af">
+  <title>Bodega - Ferretería</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1 id="titulo-bodega">🏢 Bodega</h1>
+    <p class="subtitulo" id="subtitulo-bodega">Cargando...</p>
+  </header>
+
+  <main class="contenedor">
+    <a href="index.html" class="btn-volver">← Volver al inicio</a>
+
+    <input
+      type="search"
+      id="buscador"
+      class="buscador"
+      placeholder="Buscar por código o nombre..."
+      autocomplete="off"
+    >
+
+    <div class="filtros">
+      <button class="filtro-chip activo" data-filtro="todos">Todos</button>
+      <button class="filtro-chip" data-filtro="con-saldo">Con saldo</button>
+      <button class="filtro-chip" data-filtro="sin-saldo">Sin saldo</button>
+      <button class="filtro-chip" data-filtro="negativo">Negativos</button>
+    </div>
+
+    <p class="contador" id="contador"></p>
+
+    <div class="lista-items" id="listaBodega">
+      <p class="vacio-msg">Cargando inventario...</p>
+    </div>
+  </main>
+
+  <script src="js/bodega.js"></script>
+</body>
+</html>

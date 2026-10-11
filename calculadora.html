@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e40af">
+  <title>Calculadora de cajas - Ferretería</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>🧮 Calculadora de cajas</h1>
+    <p class="subtitulo">Calcula cuántas cajas necesita el cliente</p>
+  </header>
+
+  <main class="contenedor">
+    <a href="index.html" class="btn-volver">← Volver al inicio</a>
+
+    <div class="calculadora">
+      <!-- Nombre del producto (opcional) -->
+      <label class="campo">
+        <span class="campo-label">Producto <small>(opcional)</small></span>
+        <input type="text" id="nombreProducto" placeholder="Ej: Teja Corona N°5">
+      </label>
+
+      <!-- Rendimiento por caja + unidad -->
+      <div class="campo-fila">
+        <label class="campo">
+          <span class="campo-label">Rendimiento por caja</span>
+          <input type="number" id="rendimiento" step="0.01" min="0" placeholder="1.44">
+        </label>
+        <label class="campo campo-corto">
+          <span class="campo-label">Unidad</span>
+          <select id="unidad">
+            <option value="m²">m²</option>
+            <option value="ml">ml</option>
+            <option value="und">und</option>
+            <option value="kg">kg</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- Cantidad requerida -->
+      <label class="campo">
+        <span class="campo-label">Cantidad que necesita el cliente</span>
+        <input type="number" id="requerido" step="0.01" min="0" placeholder="10">
+      </label>
+
+      <!-- Precio por caja (opcional) -->
+      <label class="campo">
+        <span class="campo-label">Precio por caja <small>(opcional)</small></span>
+        <input type="number" id="precioCaja" step="1" min="0" placeholder="45000">
+      </label>
+
+      <!-- Resultado -->
+      <div class="resultado-calc" id="resultado">
+        <p class="placeholder-resultado">Ingresa rendimiento y cantidad para ver el resultado</p>
+      </div>
+
+      <!-- Botones -->
+      <div class="botones-calc">
+        <button type="button" class="btn-limpiar" id="btnLimpiar">Limpiar</button>
+        <button type="button" class="btn-copiar" id="btnCopiar">Copiar resultado</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/calculadora.js"></script>
+</body>
+</html>
