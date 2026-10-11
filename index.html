@@ -3,222 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buscador de Productos - Ferre</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f6f9;
-      color: #333;
-    }
-    .header {
-      margin-bottom: 20px;
-    }
-    .header h1 {
-      margin: 0 0 10px 0;
-      color: #1e293b;
-    }
-    .stats {
-      font-size: 14px;
-      color: #64748b;
-    }
-    .filters-card {
-      background: #ffffff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      margin-bottom: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      align-items: flex-end;
-    }
-    .filter-group {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      min-width: 200px;
-    }
-    .filter-group label {
-      font-size: 13px;
-      font-weight: 600;
-      margin-bottom: 6px;
-      color: #475569;
-    }
-    input[type="text"], input[type="number"] {
-      padding: 10px 12px;
-      border: 1px solid #cbd5e1;
-      border-radius: 6px;
-      font-size: 14px;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-    input[type="text"]:focus, input[type="number"]:focus {
-      border-color: #2563eb;
-    }
-    .price-inputs {
-      display: flex;
-      gap: 8px;
-    }
-    .price-inputs input {
-      width: 100%;
-    }
-    .table-container {
-      background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      overflow-x: auto;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-    }
-    th, td {
-      padding: 12px 16px;
-      border-bottom: 1px solid #e2e8f0;
-    }
-    th {
-      background-color: #0f172a;
-      color: #ffffff;
-      font-weight: 600;
-      font-size: 14px;
-    }
-    tr:hover {
-      background-color: #f8fafc;
-    }
-    .badge-code {
-      background-color: #e2e8f0;
-      color: #334155;
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-family: monospace;
-      font-size: 13px;
-    }
-    .price {
-      font-weight: 600;
-      color: #166534;
-    }
-    .no-results {
-      padding: 30px;
-      text-align: center;
-      color: #94a3b8;
-    }
-  </style>
+  <meta name="theme-color" content="#1e40af">
+  <title>Ferretería - Inicio</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+  <header class="app-header">
+    <h1>🔧 Ferretería</h1>
+    <p class="subtitulo">Consulta rápida de productos y bodegas</p>
+  </header>
 
-  <div class="header">
-    <h1>Consulta de Productos</h1>
-    <div class="stats" id="totalStats">Cargando productos...</div>
-  </div>
+  <main class="menu-principal">
+    <a href="productos.html" class="menu-btn">
+      <span class="icono">📋</span>
+      <span class="titulo">Productos y Precios</span>
+      <span class="desc">Busca por código o nombre</span>
+    </a>
 
-  <!-- Controles de Búsqueda y Filtro -->
-  <div class="filters-card">
-    <div class="filter-group">
-      <label for="searchQuery">Buscar por Código o Nombre:</label>
-      <input type="text" id="searchQuery" placeholder="Ej: 013389 o PORCELANATO..." oninput="filtrarProductos()">
-    </div>
+    <a href="bodega.html?b=1" class="menu-btn">
+      <span class="icono">🏢</span>
+      <span class="titulo">Bodega 1</span>
+      <span class="desc">Inventario bodega 1</span>
+    </a>
 
-    <div class="filter-group">
-      <label>Rango de Precio ($):</label>
-      <div class="price-inputs">
-        <input type="number" id="minPrice" placeholder="Mínimo" oninput="filtrarProductos()">
-        <input type="number" id="maxPrice" placeholder="Máximo" oninput="filtrarProductos()">
-      </div>
-    </div>
-  </div>
+    <a href="bodega.html?b=2" class="menu-btn">
+      <span class="icono">🏢</span>
+      <span class="titulo">Bodega 2</span>
+      <span class="desc">Inventario bodega 2</span>
+    </a>
 
-  <!-- Tabla de Productos -->
-  <div class="table-container">
-    <table>
-      <thead>
-        <tr>
-          <th style="width: 150px;">Código</th>
-          <th>Nombre / Descripción</th>
-          <th style="width: 150px; text-align: right;">Precio</th>
-        </tr>
-      </thead>
-      <tbody id="tablaProductos">
-        <!-- Contenido generado dinámicamente -->
-      </tbody>
-    </table>
-  </div>
+    <a href="calculadora.html" class="menu-btn destacado">
+      <span class="icono">🧮</span>
+      <span class="titulo">Calculadora de cajas</span>
+      <span class="desc">Calcula según los m² del cliente</span>
+    </a>
+  </main>
 
-  <!-- Carga de la constante PRODUCTOS_DATA de data.js -->
-  <script src="data.js"></script>
+  <footer class="app-footer">
+    <p>Actualizado: <span id="fecha-actualizacion"></span></p>
+  </footer>
 
   <script>
-    // Se lee PRODUCTOS_DATA cargado desde data.js
-    const productos = typeof PRODUCTOS_DATA !== 'undefined' ? PRODUCTOS_DATA : [];
-
-    function renderizarTabla(lista) {
-      const tbody = document.getElementById("tablaProductos");
-      const stats = document.getElementById("totalStats");
-      tbody.innerHTML = "";
-
-      stats.textContent = `Mostrando ${lista.length} de ${productos.length} productos`;
-
-      if (lista.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="3" class="no-results">No se encontraron productos con los criterios ingresados.</td></tr>`;
-        return;
-      }
-
-      const fragment = document.createDocumentFragment();
-
-      // Limitamos a los primeros 200 resultados para mantener un rendimiento óptimo al escribir
-      const itemsToRender = lista.slice(0, 200);
-
-      itemsToRender.forEach(prod => {
-        const tr = document.createElement("tr");
-        tr.innerHTML = `
-          <td><span class="badge-code">${prod.codigo || ''}</span></td>
-          <td>${prod.nombre || ''}</td>
-          <td style="text-align: right;" class="price">$${Number(prod.precio || 0).toLocaleString('es-CO')}</td>
-        `;
-        fragment.appendChild(tr);
-      });
-
-      tbody.appendChild(fragment);
-
-      if (lista.length > 200) {
-        const tr = document.createElement("tr");
-        tr.innerHTML = `<td colspan="3" class="no-results">... Se encontraron ${lista.length} productos. Afina tu búsqueda para ver resultados más específicos.</td>`;
-        tbody.appendChild(tr);
-      }
-    }
-
-    function filtrarProductos() {
-      const query = document.getElementById("searchQuery").value.toLowerCase().trim();
-      const minPrice = parseFloat(document.getElementById("minPrice").value) || 0;
-      const maxPriceVal = document.getElementById("maxPrice").value;
-      const maxPrice = maxPriceVal !== "" ? parseFloat(maxPriceVal) : Infinity;
-
-      const resultados = productos.filter(prod => {
-        const codigo = (prod.codigo || "").toLowerCase();
-        const nombre = (prod.nombre || "").toLowerCase();
-        const precio = Number(prod.precio) || 0;
-
-        // Búsqueda por coincidencia en Código O Nombre
-        const coincideTexto = codigo.includes(query) || nombre.includes(query);
-
-        // Búsqueda por Rango de Precios
-        const coincidePrecio = precio >= minPrice && precio <= maxPrice;
-
-        return coincideTexto && coincidePrecio;
-      });
-
-      renderizarTabla(resultados);
-    }
-
-    // Renderizado inicial al cargar
-    document.addEventListener("DOMContentLoaded", () => {
-      renderizarTabla(productos);
-    });
+    // Muestra la fecha actual
+    document.getElementById('fecha-actualizacion').textContent =
+      new Date().toLocaleDateString('es-CO', { year: 'numeric', month: 'long', day: 'numeric' });
   </script>
 </body>
 </html>
