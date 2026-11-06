@@ -1,52 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#1e40af">
-  <title>Ferretería - Inicio</title>
-  <link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Precios y Stock - Google Sheets</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
-  <header class="app-header">
-    <h1>🔧 Ferretería</h1>
-    <p class="subtitulo">Consulta rápida de productos y bodegas</p>
-  </header>
+<body class="bg-gray-50 min-h-screen text-gray-800">
 
-  <main class="menu-principal">
-    <a href="productos.html" class="menu-btn">
-      <span class="icono">📋</span>
-      <span class="titulo">Productos y Precios</span>
-      <span class="desc">Busca por código o nombre</span>
-    </a>
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Encabezado -->
+        <header class="bg-white shadow-sm rounded-2xl p-6 mb-6 flex flex-col md:flex-row items-center justify-between gap-4 border border-gray-100">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+                    <i data-lucide="package-search" class="text-indigo-600"></i> Consulta de Inventario
+                </h1>
+                <p class="text-sm text-gray-500 mt-1">Conectado a Google Drive / Google Sheets en tiempo real.</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <span id="totalProductsCount" class="bg-indigo-50 text-indigo-700 text-xs font-semibold px-3 py-1.5 rounded-full">Conectando...</span>
+            </div>
+        </header>
 
-    <a href="bodega.html?b=1" class="menu-btn">
-      <span class="icono">🏢</span>
-      <span class="titulo">Bodega 1</span>
-      <span class="desc">Inventario bodega 1</span>
-    </a>
+        <!-- Barra de Búsqueda -->
+        <div class="bg-white shadow-sm rounded-2xl p-6 mb-6 border border-gray-100">
+            <div class="relative">
+                <i data-lucide="search" class="absolute left-4 top-3.5 text-gray-400 w-5 h-5"></i>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Escribe el código (ej: KP04BL1561) o nombre del producto..." 
+                    class="w-full pl-12 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition text-lg"
+                    oninput="filterProducts()"
+                >
+            </div>
+            <div class="flex items-center justify-between mt-3 text-xs text-gray-400 px-1">
+                <span>Tip: Escribe cualquier palabra clave del nombre o código.</span>
+                <span id="resultsCount">Cargando base de datos...</span>
+            </div>
+        </div>
 
-    <a href="bodega.html?b=2" class="menu-btn">
-      <span class="icono">🏢</span>
-      <span class="titulo">Bodega 2</span>
-      <span class="desc">Inventario bodega 2</span>
-    </a>
+        <!-- Contenedor de Resultados -->
+        <div id="productsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Los productos se inyectan dinámicamente -->
+        </div>
 
-    <a href="calculadora.html" class="menu-btn destacado">
-      <span class="icono">🧮</span>
-      <span class="titulo">Calculadora de cajas</span>
-      <span class="desc">Calcula según los m² del cliente</span>
-    </a>
-  </main>
+        <!-- Mensaje sin resultados o de carga -->
+        <div id="noResults" class="hidden bg-white shadow-sm rounded-2xl p-12 text-center border border-gray-100">
+            <i data-lucide="alert-circle" class="w-12 h-12 text-gray-300 mx-auto mb-3"></i>
+            <p class="text-gray-500 text-lg font-medium">No se encontraron productos coincidentes.</p>
+            <p class="text-sm text-gray-400 mt-1">Verifica que el código o nombre estén bien escritos.</p>
+        </div>
+    </div>
 
-  <footer class="app-footer">
-    <p>Actualizado: <span id="fecha-actualizacion"></span></p>
-  </footer>
+    <script>
+        // URL configurada con tu último Web App de Apps Script
+        const API_URL = "https://script.google.com/macros/s/AKfycbwEexJUcUNJzpuGHKy0guqWnlExTWFg1B1EGPCZCSQfqGXRR6h0pmmnnLM1CKGtYimj/exec";
+        let products = [];
 
-  <script>
-    // Muestra la fecha actual
-    document.getElementById('fecha-actualizacion').textContent =
-      new Date().toLocaleDateString('es-CO', { year: 'numeric', month: 'long', day: 'numeric' });
-  </script>
+        async function loadProducts() {
+            const resultsCount = document.getElementById('resultsCount');
+            const totalCount = document.getElementById('totalProductsCount');
+            
+            try {
+                const response = await fetch(API_URL);
+                products = await response.json();
+                
+                totalCount.textContent = `${products.length} productos sincronizados`;
+                resultsCount.textContent = `Escribe para buscar entre los productos...`;
+                renderProducts("");
+            } catch (error) {
+                console.error("Error al cargar datos:", error);
+                resultsCount.textContent = "Error al conectar con Google Sheets. Verifica la conexión.";
+                totalCount.textContent = "Error de conexión";
+            }
+        }
+
+        function renderProducts(filter = "") {
+            const container = document.getElementById('productsContainer');
+            const noResults = document.getElementById('noResults');
+            const resultsCount = document.getElementById('resultsCount');
+            container.innerHTML = "";
+
+            const query = filter.toLowerCase().trim();
+            
+            if (query === "") {
+                resultsCount.textContent = `Mostrando primeros 20 productos (Escribe para buscar específicos)`;
+                displayList(products.slice(0, 20));
+                return;
+            }
+
+            const filtered = products.filter(p => 
+                String(p.code || p.codigo || '').toLowerCase().includes(query) || 
+                String(p.name || p.nombre || '').toLowerCase().includes(query)
+            );
+
+            if (filtered.length === 0) {
+                noResults.classList.remove('hidden');
+                resultsCount.textContent = `0 resultados`;
+            } else {
+                noResults.classList.add('hidden');
+                displayList(filtered.slice(0, 50));
+                resultsCount.textContent = `Mostrando ${Math.min(50, filtered.length)} de ${filtered.length} coincidencias`;
+            }
+        }
+
+        function displayList(items) {
+            const container = document.getElementById('productsContainer');
+            items.forEach((p) => {
+                const code = p.code || p.codigo || 'S/N';
+                const name = p.name || p.nombre || 'Sin nombre';
+                const price = p.price || p.precios || p.precio || 0;
+                const stockVal = Number(p.stock) || 0;
+
+                let stockBadge = "";
+                if (stockVal > 10) {
+                    stockBadge = `<span class="bg-green-100 text-green-700 text-xs px-2 py-0.5 rounded-full font-medium">Stock: ${stockVal}</span>`;
+                } else if (stockVal > 0) {
+                    stockBadge = `<span class="bg-amber-100 text-amber-700 text-xs px-2 py-0.5 rounded-full font-medium">Bajo: ${stockVal}</span>`;
+                } else {
+                    stockBadge = `<span class="bg-red-100 text-red-700 text-xs px-2 py-0.5 rounded-full font-medium">Agotado</span>`;
+                }
+
+                const card = document.createElement('div');
+                card.className = "bg-white border border-gray-100 shadow-sm rounded-2xl p-4 flex flex-col justify-between hover:shadow-md transition";
+                card.innerHTML = `
+                    <div>
+                        <div class="flex justify-between items-start mb-2 gap-2">
+                            <span class="text-xs font-mono bg-gray-100 text-gray-700 font-bold px-2 py-0.5 rounded">${code}</span>
+                            ${stockBadge}
+                        </div>
+                        <h3 class="text-sm font-semibold text-gray-800 mb-1">${name}</h3>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-lg font-bold text-indigo-600">$${Number(price).toLocaleString('es-CO')}</span>
+                        </div>
+                        <span class="text-xs font-medium text-gray-500 bg-gray-50 px-2.5 py-1 rounded-lg">unidad</span>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+            lucide.createIcons();
+        }
+
+        function filterProducts() {
+            const query = document.getElementById('searchInput').value;
+            renderProducts(query);
+        }
+
+        // Cargar datos
+        loadProducts();
+        lucide.createIcons();
+    </script>
 </body>
 </html>
